@@ -62,24 +62,25 @@ div.category>a:hover {
   color: white;
 }
 
-div.category.category-animals {
-  background-image: url('http://placeimg.com/640/480/animals');
+div.category.category-acrylics {
+  background-image: url('../assets/acrylics/skyline.jpg');
 }
 
-div.category.category-architecture {
-  background-image: url('http://placeimg.com/640/480/arch');
+div.category.category-digital-art {
+  background-image: url('../assets/digital-art/guerriere-digital-art.png');
 }
 
-div.category.category-people {
-  background-image: url('http://placeimg.com/640/480/people');
+div.category.category-watercolours {
+  background-image: url('../assets/watercolours/fleurs-soeurs-aquarelle.jpg');
 }
 
-div.category.category-nature {
-  background-image: url('http://placeimg.com/640/480/nature');
+div.category.category-photographs {
+  background-image: url('../assets/photographs/forest-in-the-fall.jpg');
+  background-position-y: top;
 }
 
-div.category.category-technology {
-  background-image: url('http://placeimg.com/640/480/tech');
+div.category.category-design {
+  background-image: url('../assets/design/logo-rose-pivoine.jpg');
 }
 
 div.category>a>h2 {
