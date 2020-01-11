@@ -9,12 +9,10 @@ header {
   margin-bottom: 1em;
 }
 
-header>span.logo {
-  width: 300px;
-  height: 100px;
-  background-size: cover;
-  background-image: url(../assets/design/logo-cf-v3.png);
-  background-repeat: no-repeat;
+header>div.logo>img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 header>h1 {
