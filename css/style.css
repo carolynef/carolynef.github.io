@@ -34,7 +34,7 @@ header {
   margin-bottom: 1em;
 }
 
-header>div.logo>img {
+header>div.logo img {
   width: auto;
   height: 120px;
   display: block;
@@ -70,6 +70,8 @@ header>nav>a.current {
   font-weight: bold;
   border-bottom: black solid 2px;
 }
+
+/* Categories */
 
 div.category {
   position: relative;
@@ -143,6 +145,29 @@ div.category>a>h2 {
 
 div.category>a:hover>h2 {
   display: inherit;
+}
+
+/* Project */
+
+div.project {
+  font-family: "JosefinSans-Thin";
+}
+
+div.project div.project-content>h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+div.project div.project-toc>h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+div.project div.project-toc>ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 footer {
