@@ -35,8 +35,8 @@ header {
 }
 
 header>div.logo>img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 120px;
   display: block;
 }
 
@@ -94,25 +94,21 @@ div.category>a:hover {
   color: white;
 }
 
-div.category.category-acrylics {
-  background-image: url('../assets/acrylics/skyline.jpg');
+div.category.category-illustrations {
+  background-image: url('../assets/illustrations/triptyque-exotique.jpg');
 }
 
-div.category.category-digital-art {
-  background-image: url('../assets/digital-art/guerriere-digital-art.png');
+div.category.category-branding {
+  background-image: url('../assets/branding/carte-affaire-hana-fleurs.png');
 }
 
-div.category.category-watercolours {
-  background-image: url('../assets/watercolours/fleurs-soeurs-aquarelle.jpg');
-}
-
-div.category.category-photographs {
-  background-image: url('../assets/photographs/forest-in-the-fall.jpg');
+div.category.category-web-design {
+  background-image: url('../assets/web-design/forest-in-the-fall.jpg');
   background-position-y: top;
 }
 
-div.category.category-design {
-  background-image: url('../assets/design/logo-rose-pivoine.jpg');
+div.category.category-graphic-design {
+  background-image: url('../assets/graphic-design/nature-mockup-cropped.png');
 }
 
 div.category>a>h2 {
