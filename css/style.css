@@ -23,6 +23,11 @@
   src: url(../fonts/josefin_sans_thin.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Varela-Regular";
+  src: url(../fonts/Varela-Regular.ttf) format("truetype");
+}
+
 body {
   font-family: Open-Sans, sans-serif;
   background-color: white;
@@ -49,7 +54,7 @@ header>nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  ;
+  justify-self: right;
 }
 
 header>nav>a {
@@ -117,20 +122,20 @@ div.category>a:hover {
 }
 
 div.category.category-illustrations>a::before {
-  background-image: url('../assets/illustrations/bubble-gum-life.jpg');
+  background-image: url('../assets/illustrations/bubble-gum-life-thumbnail.jpg');
 }
 
 div.category.category-branding>a::before {
-  background-image: url('../assets/branding/carte-affaire-hana-fleurs.png');
+  background-image: url('../assets/branding/business-card-hana-fleurs-mockup-thumbnail.jpg');
 }
 
 div.category.category-web-design>a::before {
-  background-image: url('../assets/web-design/web-design-rp.png');
+  background-image: url('../assets/web-design/mockup-web-rose-pivoine-thumbnail.jpg');
   background-position-y: top;
 }
 
 div.category.category-graphic-design>a::before {
-  background-image: url('../assets/graphic-design/nature-mockup-cropped.png');
+  background-image: url('../assets/graphic-design/nature-mockup-cropped-miniature.jpg');
 }
 
 div.category>a>h2 {
@@ -150,11 +155,28 @@ div.category>a:hover>h2 {
 /* Project */
 
 div.project {
-  font-family: "JosefinSans-Thin";
+  font-family: "varela-regular";
+  font-size: 90%;
+}
+
+div.project .project-content figure {
+  text-align: center;
+}
+
+div.project .project-content figure img {
+  width: auto;
+  max-height: 600px;
+  margin: 0.5em auto;
+}
+
+div.project .project-content figure figcaption {
+  font-style: italic;
+  color: #333;
+  font-size: smaller;
 }
 
 div.project div.project-content>h2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: "varela-regular", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   text-transform: uppercase;
   font-size: larger;
 }
@@ -163,6 +185,10 @@ div.project div.project-toc>h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   text-transform: uppercase;
   font-size: larger;
+}
+
+div.project .project-toc .more-about h2 {
+  font-size: x-large
 }
 
 div.project div.project-toc>ul {
