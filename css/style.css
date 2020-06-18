@@ -76,6 +76,12 @@ header>nav>a.current {
   border-bottom: black solid 2px;
 }
 
+/*Illustration*/
+
+div.project.row p {
+  margin-top: 1.25rem
+}
+
 /* Categories */
 
 div.category {
@@ -164,9 +170,7 @@ div.project .project-content figure {
 }
 
 div.project .project-content figure img {
-  width: auto;
-  max-height: 600px;
-  margin: 0.5em auto;
+  margin: 0 auto;
 }
 
 div.project .project-content figure figcaption {
