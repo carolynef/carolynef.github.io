@@ -47,22 +47,39 @@ header>div.logo img {
 
 header>h1 {
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
 }
 
 header>nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   justify-self: right;
+  font-size: 1rem;
 }
 
 header>nav>a {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 2rem;
   color: gray;
+}
+
+header>nav>a:first {
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  header>nav {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    justify-content: space-around;
+  }
+  header>nav>a {
+    margin-left: 0;
+  }
 }
 
 header>nav>a:hover {
@@ -97,6 +114,15 @@ div.categories>div.row:not(:last-child)>div.category {
 
 div.category:not(:first-child) {
   padding-left: 4px;
+}
+
+@media only screen and (max-width: 991px) {
+  div.category:not(:first-child) {
+    padding-left: 0;
+  }
+  div.categories>div.row>div.category {
+    padding-bottom: 4px;
+  }
 }
 
 div.category>a::before {
@@ -158,6 +184,16 @@ div.category>a:hover>h2 {
   display: inherit;
 }
 
+@media all and (hover: none) {
+  div.category>a {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  div.category>a>h2 {
+    display: inherit;
+  }
+}
+
 /* Project */
 
 div.project {
@@ -214,4 +250,21 @@ footer>p {
   text-align: center;
   color: gray;
   font-size: 0.8em;
+}
+
+div.about-decoration {
+  display: inline-block;
+  background-image: url('../assets/graphic-design/yeux-about.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 400px;
+  content: '';
+}
+
+@media only screen and (max-width: 768px) {
+  div.about-decoration {
+    background-image: url('../assets/graphic-design/yeux-about-low-eyes.svg');
+  }
 }
