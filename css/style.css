@@ -199,6 +199,7 @@ div.category>a:hover>h2 {
 div.project {
   font-family: "varela-regular";
   font-size: 90%;
+  margin-bottom: 2.5rem;
 }
 
 div.project .project-content figure {
@@ -250,6 +251,12 @@ footer>p {
   text-align: center;
   color: gray;
   font-size: 0.8em;
+}
+
+footer p a {
+  align-items: center;
+  color: gray;
+  padding: 0.25rem;
 }
 
 div.about-decoration {
