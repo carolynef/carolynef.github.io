@@ -41,8 +41,9 @@ header {
 
 header>div.logo img {
   width: auto;
-  height: 120px;
+  height: 80px;
   display: block;
+  margin-bottom: 2rem;
 }
 
 header>h1 {
