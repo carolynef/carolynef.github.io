@@ -20,9 +20,9 @@
         <nav>
             <a class="toggle" href="#"></a>
             <ul>
-                <li>accueil</li>
-                <li>à propos</li>
-                <li>contact</li>
+                <li>Accueil</li>
+                <li>À propos</li>
+                <li>Contact</li>
             </ul>
         </nav>
     </header>
@@ -31,6 +31,12 @@
     {% block page %}
     <div id="page">
         <h1 id="watermark">ALLÔ&#8239;! VOICI<br />MON PORT&shy;fOLIO</h1>
+        <div id="categories">
+            {% for category_url in section.subsections %}
+            {% set category = get_section(path=category_url) %}
+            <h2>{{ category.title }}</h2>
+            {% endfor %}
+        </div>
     </div>
     {% endblock page %}
 
