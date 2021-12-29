@@ -9,6 +9,7 @@
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
     <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) }}">
+    <link rel="stylesheet" href="{{ get_url(path='css/font-awesome.css', trailing_slash=false) }}">
 </head>
 
 <body>
@@ -23,12 +24,21 @@
     {% endblock header %}
 
     {% block page %}
-    <div id="main-title">
+    <div id="page">
         <h1>ALLÔ&#8239;! VOICI<br />MON PORT&shy;fOLIO</h1>
     </div>
     {% endblock page %}
 
-    {% block footer %}{% endblock footer %}
+    {% block footer %}
+    <footer>
+        <p>
+            <span class="copyright">&copy; Carolyne Fabre 2022</span>
+            &ndash;
+            <a href="{{ config.extra.linkedin_url }}"><i class="fab fa-linkedin-in"></i></a>
+            <a href="{{ config.extra.instagram_url }}"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+    {% endblock footer %}
 </body>
 
 </html>

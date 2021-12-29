@@ -1,63 +1,92 @@
 @import "_fonts.scss";
 
+:root {
+    --main-color-light: black;
+    --secondary-color-light: #999;
+    --background-color-light: white;
+
+    --main-color-dark: white;
+    --secondary-color-dark: #ccc;
+    --background-color-dark: black;
+}
+
 html {
     height: 100vh;
 }
 
 body {
     font-family: var(--main-font);
-    height: 100vh;
+    color: var(--main-color-light);
+    background-color: var(--background-color-light);
+    min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-}
 
-/* Header */
+    /* General */
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem;
-
-    h2 {
-        margin: 0;
-        font-weight: 350;
-        font-size: 220%;
+    a {
+        text-decoration: none;
+        color: inherit;
     }
+    /* Header */
 
-    nav {
-        a.toggle {
-            text-decoration: none;
-            color: inherit;
-            font-size: 600%;
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+
+        h2 {
+            margin: 0;
+            font-weight: 350;
+            font-size: 220%;
+        }
+
+        nav {
+            a.toggle {
+                font-size: 600%;
+            }
         }
     }
-}
 
-/* Page */
+    /* Page */
 
-div#main-title {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    div#page {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-    h1 {
-        margin: 0;
-        text-align: center;
-        font-size: 1000%;
-        font-weight: 350;
-        word-break: break-word;
-    }
-
-    @media screen and (max-width: 768px) {
         h1 {
-            font-size: 600%;
+            margin: 0;
+            text-align: center;
+            font-size: 1000%;
+            font-weight: 350;
+            word-break: break-word;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 600%;
+            }
+        }
+    }
+
+    /* Footer */
+
+    footer {
+        color: var(--secondary-color-light);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1.5rem;
+
+        span.copyright {
+            font-style: italic;
         }
     }
 }
-
-/* Footer */
