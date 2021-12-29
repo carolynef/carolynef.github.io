@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="{{ config.extra.author }}">
+    <meta name="description" content="{{ config.extra.description }}">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+    <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) }}">
+</head>
+
+<body>
+    {% block header %}{% endblock header %}
+    {% block navbar %}{% endblock navbar %}
+
+    <h1>Sections</h1>
+    {% for category_path in section.subsections %}
+    {% set category = get_section(path=category_path) %}
+    <h2>{{ category.title }} - {{ category.description }}</h2>
+
+    <ul>
+        {% for page in category.pages %}
+        <li>
+            <p>{{ page.title }} - {{ page.description }}</p>
+            <img src="{{ page.extra.image_url }}" alt="{{ page.title }}" />
+            {{ page.content | safe }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% endfor %}
+    {% block footer %}{% endblock footer %}
+</body>
+
+</html>
