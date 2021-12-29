@@ -46,7 +46,62 @@ body {
 
         nav {
             a.toggle {
+                position: relative;
                 font-size: 600%;
+                z-index: 1;
+
+                &:hover {
+                    color: var(--secondary-color-light);
+                }
+
+                &.active {
+                    color: var(--main-color-dark);
+                }
+
+                &.active:hover {
+                    color: var(--secondary-color-dark);
+                }
+
+                &::after {
+                    display: inline-block;
+                    content: "≡";
+                    height: 2em;
+                }
+
+                &.active::after {
+                    content: "✖";
+                }
+
+                & + ul {
+                    display: flex;
+                    position: fixed;
+                    text-align: center;
+                    top: 0;
+                    right: 0;
+                    width: 40%;
+                    height: 100vh;
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+
+                    margin: 0;
+                    padding: 0;
+                    color: var(--main-color-dark);
+                    background-color: var(--background-color-dark);
+                    flex-direction: column;
+                    list-style-type: none;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    font-size: 300%;
+                    transition: transform 0.2s ease-in-out;
+                    transform: translate(100%);
+                }
+
+                &.active + ul {
+                    transform: translate(0%);
+                }
             }
         }
     }
@@ -66,10 +121,8 @@ body {
             font-size: 1000%;
             font-weight: 350;
             word-break: break-word;
-        }
 
-        @media screen and (max-width: 768px) {
-            h1 {
+            @media screen and (max-width: 768px) {
                 font-size: 600%;
             }
         }
@@ -87,6 +140,10 @@ body {
 
         span.copyright {
             font-style: italic;
+        }
+
+        i.fab {
+            padding-right: 0.5rem;
         }
     }
 }

@@ -18,7 +18,12 @@
         <h2>carolyne<br />fabre</h2>
 
         <nav>
-            <a class="toggle" href="">&equiv;</a>
+            <a class="toggle" href="#"></a>
+            <ul>
+                <li>accueil</li>
+                <li>à propos</li>
+                <li>contact</li>
+            </ul>
         </nav>
     </header>
     {% endblock header %}
@@ -34,11 +39,15 @@
         <p>
             <span class="copyright">&copy; Carolyne Fabre 2022</span>
             &ndash;
-            <a href="{{ config.extra.linkedin_url }}"><i class="fab fa-linkedin-in"></i></a>
-            <a href="{{ config.extra.instagram_url }}"><i class="fab fa-instagram"></i></a>
+            <a href="{{ config.extra.linkedin_url }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="{{ config.extra.instagram_url }}" target="_blank"><i class="fab fa-instagram"></i></a>
         </p>
     </footer>
     {% endblock footer %}
+
+    {% block scripts %}
+    <script type="text/javascript" src="{{ get_url(path='js/nav.js', trailing_slash=false) }}" />
+    {% endblock scripts %}
 </body>
 
 </html>
