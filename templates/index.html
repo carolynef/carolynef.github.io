@@ -12,25 +12,22 @@
 </head>
 
 <body>
-    {% block header %}{% endblock header %}
-    {% block navbar %}{% endblock navbar %}
+    {% block header %}
+    <header>
+        <h2>carolyne<br />fabre</h2>
 
-    <h1>Sections</h1>
-    {% for category_path in section.subsections %}
-    {% set category = get_section(path=category_path) %}
-    <h2>{{ category.title }} - {{ category.description }}</h2>
+        <nav>
+            <a class="toggle" href="">&equiv;</a>
+        </nav>
+    </header>
+    {% endblock header %}
 
-    <ul>
-        {% for page in category.pages %}
-        <li>
-            <p>{{ page.title }} - {{ page.description }}</p>
-            <img src="{{ page.extra.image_url }}" alt="{{ page.title }}" />
-            {{ page.content | safe }}
-        </li>
-        {% endfor %}
-    </ul>
+    {% block page %}
+    <div id="main-title">
+        <h1>ALLÔ&#8239;! VOICI<br />MON PORT&shy;fOLIO</h1>
+    </div>
+    {% endblock page %}
 
-    {% endfor %}
     {% block footer %}{% endblock footer %}
 </body>
 
