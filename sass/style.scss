@@ -29,6 +29,7 @@ body {
         text-decoration: none;
         color: inherit;
     }
+
     /* Header */
 
     header {
@@ -115,15 +116,30 @@ body {
         align-items: center;
         justify-content: center;
 
-        h1 {
+        h1#watermark {
+            position: fixed;
+            z-index: -1;
+            user-select: none;
             margin: 0;
             text-align: center;
             font-size: 1000%;
             font-weight: 350;
             word-break: break-word;
+            animation: 2s ease-in-out 2s dissolve;
+            animation-fill-mode: forwards;
 
             @media screen and (max-width: 768px) {
                 font-size: 600%;
+            }
+
+            @keyframes dissolve {
+                0% {
+                    opacity: 100%;
+                }
+
+                100% {
+                    opacity: 2%;
+                }
             }
         }
     }
