@@ -23,6 +23,9 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    animation: 1s ease-out 0s appear;
+    animation-fill-mode: forwards;
 
     /* General */
 
@@ -74,7 +77,7 @@ body {
                     content: "✖";
                 }
 
-                & + ul {
+                & + div {
                     display: flex;
                     position: fixed;
                     text-align: center;
@@ -94,16 +97,36 @@ body {
                     color: var(--main-color-dark);
                     background-color: var(--background-color-dark);
                     flex-direction: column;
-                    list-style-type: none;
                     align-items: center;
                     justify-content: center;
-                    gap: 2rem;
-                    font-size: 300%;
+                    gap: 10vh;
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        list-style-type: none;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 2rem;
+                        font-size: 300%;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    div.social {
+                        padding: 1rem;
+                        font-size: 200%;
+
+                        a {
+                            padding-left: 1rem;
+                        }
+                    }
+
                     transition: transform 0.2s ease-in-out;
                     transform: translate(100%);
                 }
 
-                &.active + ul {
+                &.active + div {
                     transform: translate(0%);
                 }
             }
@@ -128,7 +151,7 @@ body {
             font-size: 1000%;
             font-weight: 350;
             word-break: break-word;
-            animation: 2s ease-in-out 1s dissolve-almost;
+            animation: 2s ease-in-out 2s dissolve-almost;
             animation-fill-mode: forwards;
 
             @media screen and (max-width: 768px) {
@@ -143,7 +166,7 @@ body {
             justify-content: center;
             gap: 0.2rem;
             opacity: 0;
-            animation: 2s ease-in-out 2s appear;
+            animation: 2s ease-in-out 3s appear;
             animation-fill-mode: forwards;
 
             h2 {
