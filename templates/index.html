@@ -16,9 +16,10 @@
     {% block menu %}
     <nav id="menu">
         <ul>
-            <li>Accueil</li>
-            <li>À propos</li>
-            <li>Contact</li>
+            <li><a href="/">Accueil</a></li>
+            {% for page in section.pages %}
+            <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+            {% endfor %}
         </ul>
 
         <div class="social">
@@ -63,12 +64,10 @@
 
     {% block footer %}
     <footer>
-        <p>
-            <span class="copyright">&copy; Carolyne Fabre 2022</span>
-            &ndash;
-            <a href="{{ config.extra.linkedin_url }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="{{ config.extra.instagram_url }}" target="_blank"><i class="fab fa-instagram"></i></a>
-        </p>
+        <span class="copyright">&copy; Carolyne Fabre 2022</span>
+        &ndash;
+        <a href="{{ config.extra.linkedin_url }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="{{ config.extra.instagram_url }}" target="_blank"><i class="fab fa-instagram"></i></a>
     </footer>
     {% endblock footer %}
 
