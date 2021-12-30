@@ -13,25 +13,25 @@
 </head>
 
 <body>
+    {% block menu %}
+    <nav id="menu">
+        <ul>
+            <li>Accueil</li>
+            <li>À propos</li>
+            <li>Contact</li>
+        </ul>
+
+        <div class="social">
+            <a href="{{ config.extra.linkedin_url }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="{{ config.extra.instagram_url }}" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </nav>
+    <a id="menu-toggle" href=""></a>
+    {% endblock menu %}
+
     {% block header %}
     <header>
         <h2><a href="#">carolyne<br />fabre</a></h2>
-
-        <nav>
-            <a class="toggle" href=""></a>
-            <div>
-                <ul>
-                    <li>Accueil</li>
-                    <li>À propos</li>
-                    <li>Contact</li>
-                </ul>
-
-                <div class="social">
-                    <a href="{{ config.extra.linkedin_url }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="{{ config.extra.instagram_url }}" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </nav>
     </header>
     {% endblock header %}
 

@@ -48,6 +48,99 @@ body {
     a {
         text-decoration: none;
         color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    /* Menu */
+
+    #menu {
+        display: flex;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100vh;
+        text-transform: lowercase;
+        z-index: 3;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        margin: 0;
+        padding: 0;
+        color: var(--main-color-dark);
+        background-color: var(--background-color-dark);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10vh;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 300%;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.social {
+            padding: 1rem;
+            font-size: 200%;
+
+            a {
+                padding-left: 1rem;
+            }
+        }
+
+        transition: transform 0.2s ease-in-out;
+        transform: translate(100%);
+    }
+
+    a#menu-toggle {
+        position: fixed;
+        font-size: 600%;
+        z-index: 5;
+        top: 0;
+        right: 1.5rem;
+        height: var(--header-height);
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        &::after {
+            display: inline-block;
+            content: "≡";
+        }
+    }
+
+    &.menu-open {
+        #menu {
+            transform: translate(0%);
+        }
+        a#menu-toggle {
+            color: var(--main-color-dark);
+
+            &:hover {
+                color: var(--secondary-color-dark);
+            }
+
+            &::after {
+                content: "✖";
+            }
+        }
     }
 
     /* Header */
@@ -70,91 +163,6 @@ body {
             font-size: 220%;
             transition-property: opacity;
             transition-duration: 0.5s;
-        }
-
-        nav {
-            margin-right: 1.5rem;
-
-            a.toggle {
-                position: relative;
-                font-size: 600%;
-                z-index: 5;
-
-                &:hover {
-                    color: var(--secondary-color);
-                }
-
-                &.active {
-                    color: var(--main-color-dark);
-                }
-
-                &.active:hover {
-                    color: var(--secondary-color-dark);
-                }
-
-                &::after {
-                    display: inline-block;
-                    content: "≡";
-                    height: 2em;
-                }
-
-                &.active::after {
-                    content: "✖";
-                }
-
-                & + div {
-                    display: flex;
-                    position: fixed;
-                    text-align: center;
-                    top: 0;
-                    right: 0;
-                    width: 40%;
-                    height: 100vh;
-                    text-transform: lowercase;
-                    z-index: 3;
-
-                    @media screen and (max-width: 768px) {
-                        width: 100%;
-                    }
-
-                    margin: 0;
-                    padding: 0;
-                    color: var(--main-color-dark);
-                    background-color: var(--background-color-dark);
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10vh;
-
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                        list-style-type: none;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 2rem;
-                        font-size: 300%;
-                        margin: 0;
-                        padding: 0;
-                    }
-
-                    div.social {
-                        padding: 1rem;
-                        font-size: 200%;
-
-                        a {
-                            padding-left: 1rem;
-                        }
-                    }
-
-                    transition: transform 0.2s ease-in-out;
-                    transform: translate(100%);
-                }
-
-                &.active + div {
-                    transform: translate(0%);
-                }
-            }
         }
     }
 
@@ -220,10 +228,6 @@ body {
                     @media screen and (max-width: 768px) {
                         font-size: 300%;
                     }
-
-                    a:hover {
-                        text-decoration: underline;
-                    }
                 }
             }
         }
@@ -243,11 +247,8 @@ body {
                         font-size: 120%;
                         text-transform: lowercase;
 
-                        &:hover,
                         &.current {
                             text-decoration: underline;
-                        }
-                        &.current {
                             font-weight: bold;
                         }
                     }
