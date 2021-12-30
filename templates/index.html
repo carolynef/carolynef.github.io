@@ -10,6 +10,10 @@
 
     <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) }}">
     <link rel="stylesheet" href="{{ get_url(path='css/font-awesome.css', trailing_slash=false) }}">
+
+    <script type="text/javascript" src="{{ get_url(path='js/masonry.pkgd.min.js', trailing_slash=false) }}"></script>
+    <script type="text/javascript"
+        src="{{ get_url(path='js/imagesloaded.pkgd.min.js', trailing_slash=false) }}"></script>
 </head>
 
 <body>
@@ -38,7 +42,9 @@
 
     {% block page %}
     <div id="page">
-        <h1 id="watermark">ALLÔ&#8239;! VOICI<br />MON PORT&shy;fOLIO</h1>
+        <div id="watermark">
+            <h1>ALLÔ&#8239;! VOICI<br />MON PORT&shy;fOLIO</h1>
+        </div>
         <div id="categories">
             <ul>
                 {% for category_url in section.subsections %}
@@ -50,6 +56,10 @@
 
         <div id="categories-detail">
             <ul>
+                <li>
+                    <a id="tous" class="route" href="#tous">tous</a>
+                </li>
+
                 {% for category_url in section.subsections %}
                 {% set category = get_section(path=category_url) %}
                 <li>
@@ -58,6 +68,19 @@
                 </li>
                 {% endfor %}
             </ul>
+            <div class="thumbnails">
+                <div class="thumbnails-sizer"></div>
+                {% for category_url in section.subsections %}
+                {% set category = get_section(path=category_url) %}
+                {% for page in category.pages %}
+                <div class="thumbnail">
+                    <a href="#{{ page.title | slugify }}">
+                        <img src="{{ page.extra.image_url }}" alt="{{ page.title }}">
+                    </a>
+                </div>
+                {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </div>
     {% endblock page %}
@@ -75,6 +98,7 @@
     <script type="text/javascript" src="{{ get_url(path='js/nav.js', trailing_slash=false) }}"></script>
     <script type="text/javascript" src="{{ get_url(path='js/invert.js', trailing_slash=false) }}"></script>
     <script type="text/javascript" src="{{ get_url(path='js/routing.js', trailing_slash=false) }}"></script>
+    <script type="text/javascript" src="{{ get_url(path='js/thumbnails.js', trailing_slash=false) }}"></script>
     {% endblock scripts %}
 </body>
 

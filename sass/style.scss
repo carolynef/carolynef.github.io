@@ -47,6 +47,7 @@ body {
 
     a {
         text-decoration: none;
+        outline: none;
         color: inherit;
 
         &:hover {
@@ -75,7 +76,7 @@ body {
         text-transform: lowercase;
         z-index: 3;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
             width: 100%;
         }
 
@@ -122,6 +123,8 @@ body {
         height: var(--header-height);
         display: flex;
         align-items: center;
+        transition-property: top;
+        transition-duration: 0.5s;
 
         &:hover {
             color: var(--secondary-color);
@@ -155,6 +158,8 @@ body {
 
     header {
         position: fixed;
+        pointer-events: none;
+        z-index: 1;
         top: 0;
         width: 100%;
         height: var(--header-height);
@@ -163,14 +168,38 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 0;
+        transition-property: top;
+        transition-duration: 0.5s;
+        background-color: transparent;
+
+        @media screen and (max-width: 1024px) {
+            background-color: var(--background-color);
+        }
 
         h2 {
+            pointer-events: auto;
             margin: 0;
             margin-left: 1.5rem;
             font-weight: 350;
             font-size: 220%;
             transition-property: opacity;
             transition-duration: 0.5s;
+        }
+    }
+
+    &.scroll-down {
+        &:not(.menu-open) {
+            #menu-toggle {
+                @media screen and (max-width: 1024px) {
+                    top: calc(-1 * var(--header-height));
+                }
+            }
+        }
+
+        header {
+            @media screen and (max-width: 1024px) {
+                top: calc(-1 * var(--header-height));
+            }
         }
     }
 
@@ -185,20 +214,29 @@ body {
         transition-property: opacity;
         transition-duration: 0.5s;
 
-        h1#watermark {
+        div#watermark {
             position: absolute;
             top: var(--header-height);
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - var(--header-height));
             z-index: -1;
             user-select: none;
             text-align: center;
-            font-size: 1000%;
-            font-weight: 350;
-            word-break: break-word;
             animation: 2s ease-in-out 2s dissolve-almost;
             animation-fill-mode: forwards;
 
-            @media screen and (max-width: 768px) {
-                font-size: 500%;
+            h1 {
+                margin: auto 0;
+                font-size: 1000%;
+                font-weight: 350;
+                word-break: break-word;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 500%;
+                }
             }
         }
 
@@ -233,7 +271,7 @@ body {
                     text-transform: lowercase;
                     margin: 0;
 
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 1024px) {
                         font-size: 300%;
                     }
                 }
@@ -247,6 +285,8 @@ body {
                 list-style-type: none;
                 align-items: center;
                 justify-content: center;
+                margin: 0;
+                padding: 0 1rem;
                 gap: 2rem;
 
                 li {
@@ -258,6 +298,36 @@ body {
                         &.current {
                             text-decoration: underline;
                             font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            div.thumbnails {
+                margin: 2rem auto;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+
+                .thumbnails-sizer,
+                .thumbnail {
+                    width: 350px;
+                }
+
+                .thumbnail {
+                    float: left;
+                    margin-bottom: 16px;
+
+                    a {
+                        display: block;
+                        max-width: 100%;
+
+                        img {
+                            display: block;
+                            max-width: 100%;
                         }
                     }
                 }
@@ -289,7 +359,7 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 0 1.5rem;
+        padding: 1rem 1.5rem;
         transition-property: opacity;
         transition-duration: 0.5s;
         gap: 0.5rem;
