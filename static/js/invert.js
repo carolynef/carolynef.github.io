@@ -1,7 +1,7 @@
 'use strict';
 
 function setupInvert() {
-    const element = document.getElementById('categories');
+    const element = document.getElementById('categories').querySelector('ul');
 
     element.addEventListener('mouseenter', e => {
         if (!document.body.classList.contains('invert')) {

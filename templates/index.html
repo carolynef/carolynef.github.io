@@ -15,10 +15,10 @@
 <body>
     {% block header %}
     <header>
-        <h2>carolyne<br />fabre</h2>
+        <h2><a href="#">carolyne<br />fabre</a></h2>
 
         <nav>
-            <a class="toggle" href="#"></a>
+            <a class="toggle" href=""></a>
             <div>
                 <ul>
                     <li>Accueil</li>
@@ -39,10 +39,24 @@
     <div id="page">
         <h1 id="watermark">ALLÔ&#8239;! VOICI<br />MON PORT&shy;fOLIO</h1>
         <div id="categories">
-            {% for category_url in section.subsections %}
-            {% set category = get_section(path=category_url) %}
-            <h2>{{ category.title }}</h2>
-            {% endfor %}
+            <ul>
+                {% for category_url in section.subsections %}
+                {% set category = get_section(path=category_url) %}
+                <li><a href="#{{ category.title | slugify }}">{{ category.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div id="categories-detail">
+            <ul>
+                {% for category_url in section.subsections %}
+                {% set category = get_section(path=category_url) %}
+                <li>
+                    <a id="{{ category.title | slugify }}" class="route" href="#{{ category.title | slugify }}">{{
+                        category.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
     {% endblock page %}
@@ -61,6 +75,7 @@
     {% block scripts %}
     <script type="text/javascript" src="{{ get_url(path='js/nav.js', trailing_slash=false) }}"></script>
     <script type="text/javascript" src="{{ get_url(path='js/invert.js', trailing_slash=false) }}"></script>
+    <script type="text/javascript" src="{{ get_url(path='js/routing.js', trailing_slash=false) }}"></script>
     {% endblock scripts %}
 </body>
 
