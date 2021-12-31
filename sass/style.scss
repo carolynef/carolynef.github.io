@@ -1,7 +1,13 @@
 @import "_fonts.scss";
 @import "_animations.scss";
 
+@-ms-viewport {
+    width: device-width;
+}
+
 :root {
+    --max-width: 1200px;
+
     --main-color-light: black;
     --secondary-color-light: #999;
     --background-color-light: white;
@@ -12,6 +18,22 @@
 
     --header-height: 200px;
     --menu-open-opacity: 10%;
+
+    --thumbnail-width-unit: 350px;
+    --thumbnail-height-unit: 250px;
+    --thumbnail-gutter: 16px;
+
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+        --thumbnail-width-unit: 200px;
+        --thumbnail-height-unit: 120px;
+        --thumbnail-gutter: 8px;
+    }
+
+    @media screen and (max-width: 640px) {
+        --thumbnail-width-unit: 100px;
+        --thumbnail-height-unit: 80px;
+        --thumbnail-gutter: 4px;
+    }
 }
 
 html {
@@ -32,7 +54,7 @@ body {
     font-family: var(--main-font);
     color: var(--main-color);
     background-color: var(--background-color);
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -247,6 +269,10 @@ body {
             align-items: center;
             justify-content: center;
 
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+
             ul {
                 display: flex;
                 flex-direction: column;
@@ -287,13 +313,20 @@ body {
                 justify-content: center;
                 margin: 0;
                 padding: 0 1rem;
-                gap: 2rem;
+                gap: 1rem;
+                font-weight: 100;
+                font-size: 120%;
+
+                @media screen and (max-width: 1024px) {
+                    flex-direction: column;
+                }
 
                 li {
                     a {
-                        font-weight: 100;
-                        font-size: 120%;
+                        display: inline-block;
+                        width: 100%;
                         text-transform: lowercase;
+                        text-align: center;
 
                         &.current {
                             text-decoration: underline;
@@ -314,20 +347,43 @@ body {
 
                 .thumbnails-sizer,
                 .thumbnail {
-                    width: 350px;
+                    --width-unit: var(--thumbnail-width-unit);
+                    --height-unit: var(--thumbnail-height-unit);
+
+                    &.thumbnail-w2 {
+                        --width-unit: calc(2 * var(--thumbnail-width-unit) + var(--thumbnail-gutter));
+                    }
+
+                    &.thumbnail-h2 {
+                        --height-unit: calc(2 * var(--thumbnail-height-unit) + var(--thumbnail-gutter));
+                    }
+
+                    width: var(--width-unit);
+                    height: var(--height-unit);
                 }
 
                 .thumbnail {
                     float: left;
-                    margin-bottom: 16px;
+                    margin-bottom: var(--thumbnail-gutter);
+                    opacity: 1;
+                    transition-property: opacity, width;
+                    transition-duration: 1;
+
+                    &.hidden {
+                        opacity: 0;
+                        width: 0;
+                    }
 
                     a {
-                        display: block;
-                        max-width: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
 
                         img {
-                            display: block;
-                            max-width: 100%;
+                            object-fit: cover;
+                            object-position: center center;
+                            width: 100%;
+                            height: 100%;
                         }
                     }
                 }

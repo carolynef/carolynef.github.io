@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="{{ config.extra.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1>
+    <meta name=" author" content="{{ config.extra.author }}">
     <meta name="description" content="{{ config.extra.description }}">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
@@ -57,7 +57,7 @@
         <div id="categories-detail">
             <ul>
                 <li>
-                    <a id="tous" class="route" href="#tous">tous</a>
+                    <a id="all" class="route" href="#all">tous</a>
                 </li>
 
                 {% for category_url in section.subsections %}
@@ -73,8 +73,9 @@
                 {% for category_url in section.subsections %}
                 {% set category = get_section(path=category_url) %}
                 {% for page in category.pages %}
-                <div class="thumbnail">
-                    <a href="#{{ page.title | slugify }}">
+                <div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
+                    data-category="{{ category.title | slugify }}">
+                    <a href="#{{ page.slug }}">
                         <img src="{{ page.extra.image_url }}" alt="{{ page.title }}">
                     </a>
                 </div>
@@ -97,8 +98,8 @@
     {% block scripts %}
     <script type="text/javascript" src="{{ get_url(path='js/nav.js', trailing_slash=false) }}"></script>
     <script type="text/javascript" src="{{ get_url(path='js/invert.js', trailing_slash=false) }}"></script>
-    <script type="text/javascript" src="{{ get_url(path='js/routing.js', trailing_slash=false) }}"></script>
     <script type="text/javascript" src="{{ get_url(path='js/thumbnails.js', trailing_slash=false) }}"></script>
+    <script type="text/javascript" src="{{ get_url(path='js/routing.js', trailing_slash=false) }}"></script>
     {% endblock scripts %}
 </body>
 
