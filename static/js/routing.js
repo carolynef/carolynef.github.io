@@ -13,10 +13,6 @@ function setupRouting() {
 function updateCurrent(elements, hash) {
     let category = hash.substring(1);
 
-    if (category === "") {
-        category = "all";
-    }
-
     let currentElement = null;
 
     for (const element of elements) {
@@ -25,6 +21,15 @@ function updateCurrent(elements, hash) {
             currentElement = element;
         } else {
             element.classList.remove('current');
+        }
+    }
+
+    // If there is no current element, assume `all` was meant to be selected.
+    if (currentElement === null) {
+        for (const element of elements) {
+            if (element.id === 'all') {
+                element.classList.add('current');
+            }
         }
     }
 

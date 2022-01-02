@@ -6,7 +6,7 @@
 }
 
 :root {
-    --max-width: 1200px;
+    --global-margin: 200px;
 
     --main-color-light: black;
     --secondary-color-light: #999;
@@ -183,7 +183,7 @@ body {
         pointer-events: none;
         z-index: 1;
         top: 0;
-        width: 100%;
+        width: var(--global-margin);
         height: var(--header-height);
         display: flex;
         flex-direction: row;
@@ -228,7 +228,8 @@ body {
     /* Page */
 
     div#page {
-        margin-top: var(--header-height);
+        position: relative;
+        margin: var(--header-height) var(--global-margin) 0 var(--global-margin);
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -238,8 +239,9 @@ body {
 
         div#watermark {
             position: absolute;
-            top: var(--header-height);
-            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -251,7 +253,7 @@ body {
             animation-fill-mode: forwards;
 
             h1 {
-                margin: auto 0;
+                margin: 0;
                 font-size: 1000%;
                 font-weight: 350;
                 word-break: break-word;
