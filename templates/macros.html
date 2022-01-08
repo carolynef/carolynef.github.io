@@ -1,0 +1,7 @@
+{% macro image_url(root, url) %}
+{% if url is starting_with('http') %}
+{{ url }}
+{% else %}
+{{ root ~ url }}
+{% endif %}
+{% endmacro %}
