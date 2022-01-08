@@ -16,3 +16,14 @@ zola serve
 ```
 
 The website will be available at: `http://127.0.0.1:1111` by default.
+
+## Generating links to assets from Google Drive
+
+To generate links to Google Drive assets, one can simply right click on the file
+in Google Drive web-app, and select "Get a shareable link":
+
+![Get a shareable link in Google Drive](./docs/google-drive-get-shareable-link.png)
+
+From there, paste the link in the [Google Drive Direct Link
+Generator](https://buildbrothers.com/gdrive-generator/) and click "Generate
+Link".
