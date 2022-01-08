@@ -22,6 +22,8 @@
     --thumbnail-width-unit: 350px;
     --thumbnail-height-unit: 250px;
     --thumbnail-gutter: 16px;
+    --thumbnail-overlay-main-color: black;
+    --thumbnail-overlay-background-color: rgba(255, 255, 255, 0.75);
 
     @media screen and (min-width: 641px) and (max-width: 1200px) {
         --global-margin: 0;
@@ -388,25 +390,51 @@ body {
                 .thumbnail {
                     float: left;
                     margin-bottom: var(--thumbnail-gutter);
-                    opacity: 1;
-                    transition-property: opacity, width;
-                    transition-duration: 1;
 
                     &.hidden {
-                        opacity: 0;
-                        width: 0;
+                        display: none;
                     }
 
                     a {
                         display: inline-block;
                         width: 100%;
                         height: 100%;
+                        position: relative;
 
                         img {
                             object-fit: cover;
                             object-position: center center;
                             width: 100%;
                             height: 100%;
+                        }
+
+                        div.overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            opacity: 0;
+                            background: var(--thumbnail-overlay-background-color);
+                            color: var(--thumbnail-overlay-main-color);
+                            transition-property: opacity;
+                            transition-duration: 0.3s;
+                            transition-timing-function: ease;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            h3 {
+                                font-size: 150%;
+                            }
+                        }
+
+                        &:hover {
+                            div.overlay {
+                                opacity: 1;
+                            }
                         }
                     }
                 }
