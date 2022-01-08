@@ -440,6 +440,52 @@ body {
                 }
             }
         }
+
+        div.page-layout {
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 2rem;
+
+            @media screen and (max-width: 640px) {
+                font-size: 80%;
+            }
+
+            article {
+                flex: 1;
+
+                h1 {
+                    white-space: nowrap;
+                }
+            }
+
+            div.info {
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                }
+            }
+        }
+
+        div.images-list {
+            margin-top: 2rem;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+
+            a {
+                display: block;
+                line-height: 0;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 
     &.menu-open {

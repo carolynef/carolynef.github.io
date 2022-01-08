@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% block page %}
+<div class="page-layout">
+	<article>
+		<h1>{{ page.title }}</h1>
+		{{ page.content | safe }}
+	</article>
+</div>
+{% endblock page %}
+
+{% block scripts %}
+<script type="text/javascript" src="{{ get_url(path='js/nav.js', trailing_slash=false) }}"></script>
+{% endblock scripts %}
