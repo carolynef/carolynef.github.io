@@ -1,6 +1,6 @@
 +++
-title = "Monterey Bay"
-description = "Une plage sur la baie de Monterey, en Californie"
+title = "Placeholder 1"
+description = "A placeholder image"
 date = "2019-01-01"
 
 [extra]
@@ -15,4 +15,4 @@ categories = ["Illustrations"]
 tags = ["Projet personnel", "Illustrator", "Affiche vintage", "2020"]
 +++
 
-Illustration de Monterey Bay, en Californie.
+Illustration du Jardin de Majorelle, à Marrakech, Maroc.
