@@ -1,6 +1,6 @@
 +++
 title = "Monterey Bay"
-description = "Une plage sur la baie de Monterey, en Californie"
+description = "Illustration de Monterey Bay, en Californie"
 date = "2019-01-01"
 template = "illustration/page.html"
 

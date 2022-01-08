@@ -1,7 +1,7 @@
 +++
-title = "Placeholder 1"
-description = "A placeholder image"
-date = "2019-01-01"
+title = "Le Jardin Majorelle"
+description = "Illustration du Jardin Majorelle au Maroc"
+date = "2020-01-02"
 template = "illustration/page.html"
 
 [extra]
