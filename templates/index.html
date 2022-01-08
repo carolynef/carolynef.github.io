@@ -80,16 +80,7 @@
                 <div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
                     data-category="{{ category.title | slugify }}">
                     <a href="#{{ page.slug }}">
-                        <img src="{{ macros::image_url(root=page.path, url=page.extra.image_url) }}"
-                            alt="{{ page.title }}">
-                    </a>
-                </div>
-                {% endfor %}
-                {% for page in category.pages %}
-                <div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
-                    data-category="{{ category.title | slugify }}">
-                    <a href="#{{ page.slug }}">
-                        <img src="{{ macros::image_url(root=page.path, url=page.extra.image_url) }}"
+                        <img src="{{ macros::image_url(root=page.path, url=page.extra.image_urls[0]) }}"
                             alt="{{ page.title }}">
                     </a>
                 </div>

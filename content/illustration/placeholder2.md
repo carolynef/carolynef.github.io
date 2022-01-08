@@ -4,13 +4,16 @@ description = "A placeholder image"
 date = "2019-01-01"
 
 [extra]
-image_url = "https://random.imagecdn.app/1024/770"
-width = 2
-height = 1
+image_urls = [
+    "https://random.imagecdn.app/1024/751",
+    "https://random.imagecdn.app/1024/761"
+]
+width = 1
+height = 2
 
 [taxonomies]
 categories = ["Illustrations"]
-tags = ["illustrator"]
+tags = ["Projet personnel"]
 +++
 
-Coucou.
+Affiche décorative de Monterey Bay, en Californie.
