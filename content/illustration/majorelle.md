@@ -2,6 +2,7 @@
 title = "Placeholder 1"
 description = "A placeholder image"
 date = "2019-01-01"
+template = "illustration/page.html"
 
 [extra]
 image_urls = [
