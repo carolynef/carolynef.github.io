@@ -76,7 +76,11 @@
                 <div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
                     data-category="{{ category.title | slugify }}">
                     <a href="#{{ page.slug }}">
+                        {% if page.extra.image_url is starting_with('http') %}
                         <img src="{{ page.extra.image_url }}" alt="{{ page.title }}">
+                        {% else %}
+                        <img src="{{ page.path ~ page.extra.image_url }}" alt="{{ page.title }}">
+                        {% endif %}
                     </a>
                 </div>
                 {% endfor %}
