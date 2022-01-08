@@ -5,7 +5,7 @@ date = "2019-01-01"
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1qPo7pxKj90yHed7cmLk44iwbIlH35v83", "https://drive.google.com/uc?id=1qRHmq0-a1rNWoLw99JDMhhIde2StcDN4"
+    "https://drive.google.com/uc?id=1rJ6Mcew_6PCDhAGNpKk66ZdalbFrYGSu", "https://drive.google.com/uc?id=1rDMjBrbFMVteagGZaJ9Za-h1ooyep7vp"
 ]
 width = 1
 height = 1
