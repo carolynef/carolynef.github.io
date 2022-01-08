@@ -8,17 +8,25 @@ function categoryMatches(element, category) {
     return element.dataset.category === category;
 }
 
+function getGutter(element) {
+    return parseInt(getComputedStyle(element).getPropertyValue('--thumbnail-gutter'));
+}
+
+function createMasonry(element) {
+    return new Masonry(element, {
+        itemSelector: '.thumbnail',
+        columnWidth: '.thumbnails-sizer',
+        gutter: getGutter(element),
+        fitWidth: true,
+        horizontalOrder: false
+    });
+}
+
 function setupThumbnails() {
     const thumbnails = document.querySelector('.thumbnails');
     const items = thumbnails.querySelectorAll('.thumbnail');
-    const gutter = parseInt(getComputedStyle(thumbnails).getPropertyValue('--thumbnail-gutter'));
 
-    const msnry = new Masonry(thumbnails, {
-        itemSelector: '.thumbnail',
-        columnWidth: '.thumbnails-sizer',
-        gutter: gutter,
-        fitWidth: true
-    });
+    let msnry = createMasonry(thumbnails);
 
     imagesLoaded(thumbnails).on('progress', function () {
         // layout Masonry after each image loads
@@ -39,8 +47,15 @@ function setupThumbnails() {
         msnry.layout();
     });
 
-    thumbnails.addEventListener('resize', (e) => {
-        msnry.layout();
+    window.addEventListener('resize', (e) => {
+        const gutter = getGutter(thumbnails);
+
+        if (msnry.gutter == gutter) {
+            msnry.layout();
+        } else {
+            msnry.destroy();
+            msnry = createMasonry(thumbnails);
+        }
     });
 }
 

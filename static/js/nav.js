@@ -9,9 +9,15 @@ function setupToggle() {
     };
 }
 
+function getHeaderHeight() {
+    return parseFloat(getComputedStyle(document.body).getPropertyValue('--header-size'))
+        * parseInt(getComputedStyle(document.body).getPropertyValue('--header-height'));
+}
+
 function setupScroll() {
     const scrollUp = "scroll-up";
     const scrollDown = "scroll-down";
+    const scrollPastHeader = "scroll-past-header";
 
     let lastScroll = 0;
 
@@ -32,6 +38,12 @@ function setupScroll() {
         ) {
             document.body.classList.remove(scrollDown);
             document.body.classList.add(scrollUp);
+        }
+
+        if (currentScroll >= getHeaderHeight()) {
+            document.body.classList.add(scrollPastHeader);
+        } else {
+            document.body.classList.remove(scrollPastHeader);
         }
 
         lastScroll = currentScroll;

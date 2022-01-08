@@ -57,23 +57,34 @@
         </div>
 
         <div id="categories-detail">
-            <ul>
-                <li>
-                    <a id="all" class="route" href="#all">tous</a>
-                </li>
+            <nav>
+                <ul>
+                    <li>
+                        <a id="all" class="route" href="#all">tous</a>
+                    </li>
 
-                {% for category_url in section.subsections %}
-                {% set category = get_section(path=category_url) %}
-                <li>
-                    <a id="{{ category.title | slugify }}" class="route" href="#{{ category.title | slugify }}">{{
-                        category.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
+                    {% for category_url in section.subsections %}
+                    {% set category = get_section(path=category_url) %}
+                    <li>
+                        <a id="{{ category.title | slugify }}" class="route" href="#{{ category.title | slugify }}">{{
+                            category.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
             <div class="thumbnails">
                 <div class="thumbnails-sizer"></div>
                 {% for category_url in section.subsections %}
                 {% set category = get_section(path=category_url) %}
+                {% for page in category.pages %}
+                <div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
+                    data-category="{{ category.title | slugify }}">
+                    <a href="#{{ page.slug }}">
+                        <img src="{{ macros::image_url(root=page.path, url=page.extra.image_url) }}"
+                            alt="{{ page.title }}">
+                    </a>
+                </div>
+                {% endfor %}
                 {% for page in category.pages %}
                 <div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
                     data-category="{{ category.title | slugify }}">
