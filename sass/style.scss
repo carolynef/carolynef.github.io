@@ -467,6 +467,18 @@ body {
                 font-size: 80%;
             }
 
+            a {
+                font-style: italic;
+                transition-property: color, background-color;
+                transition-timing-function: ease;
+                transition-duration: 0.25s;
+
+                &:focus {
+                    color: var(--main-color-dark);
+                    background-color: var(--background-color-dark);
+                }
+            }
+
             article {
                 flex: 1;
 
@@ -504,6 +516,10 @@ body {
             a {
                 display: block;
                 line-height: 0;
+
+                &:focus {
+                    outline: black solid 2px;
+                }
 
                 iframe {
                     object-fit: contain;
