@@ -492,6 +492,12 @@ body {
                 display: block;
                 line-height: 0;
 
+                iframe {
+                    object-fit: contain;
+                    max-width: 100%;
+                    max-height: 100vh;
+                }
+
                 img {
                     max-width: 100%;
                 }

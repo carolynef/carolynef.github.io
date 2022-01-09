@@ -25,7 +25,15 @@
 <div class="images-list">
 	{% for image in page.extra.image_urls %}
 	{% set image_url = macros::image_url(root=page.path, url=image) %}
-	<a href="{{ image_url }}" target="_blank"><img src="{{ image_url }}" alt="{{ page.title }}"></a>
+	<a href="{{ image_url }}" target="_blank">
+		{% if image is starting_with('https://www.youtube.com/embed/') %}
+		<iframe width="1600" height="1200" src="{{ image_url }}?rel=0" title="{{ page.description }}" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+		{% else %}
+		<img src="{{ image_url }}" alt="{{ page.title }}">
+		{% endif %}
+	</a>
 	{% endfor %}
 </div>
 {% endblock page %}
