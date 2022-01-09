@@ -262,7 +262,7 @@ body {
             z-index: -1;
             user-select: none;
             text-align: center;
-            animation: 2s ease-in-out 2s dissolve-almost;
+            animation: 1s ease-in-out 1s dissolve-almost;
             animation-fill-mode: forwards;
 
             h1 {
@@ -296,7 +296,7 @@ body {
                 text-align: center;
                 gap: 0.2rem;
                 opacity: 0;
-                animation: 2s ease-in-out 3s appear;
+                animation: 1s ease-in-out 2s appear;
                 animation-fill-mode: forwards;
                 list-style-type: none;
                 margin: 0 2rem;
