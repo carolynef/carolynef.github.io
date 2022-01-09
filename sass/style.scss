@@ -6,6 +6,8 @@
 }
 
 :root {
+    --logo-light: url("/images/logo-light.svg");
+    --logo-dark: url("/images/logo-dark.svg");
     --main-color-light: black;
     --secondary-color-light: #999;
     --background-color-light: white;
@@ -50,18 +52,23 @@ html {
 }
 
 body {
+    --logo: var(--logo-light);
     --main-color: var(--main-color-light);
     --secondary-color: var(--secondary-color-light);
     --background-color: var(--background-color-light);
+    --logo-reverse: var(--logo-dark);
     --main-color-reverse: var(--main-color-dark);
     --secondary-color-reverse: var(--secondary-color-dark);
     --background-color-reverse: var(--background-color-dark);
 
     &.negate,
     &.invert:not(.menu-open) {
+        --logo: var(--logo-dark);
+        --theme: dark;
         --main-color: var(--main-color-dark);
         --secondary-color: var(--secondary-color-dark);
         --background-color: var(--background-color-dark);
+        --logo-reverse: var(--logo-light);
         --main-color-reverse: var(--main-color-light);
         --secondary-color-reverse: var(--secondary-color-light);
         --background-color-reverse: var(--background-color-light);
@@ -199,7 +206,6 @@ body {
 
     header {
         position: fixed;
-        pointer-events: none;
         z-index: 1;
         top: 0;
         min-width: var(--minimum-page-margin);
@@ -214,17 +220,16 @@ body {
         transition-timing-function: ease;
         background-color: transparent;
 
-        h2 {
-            pointer-events: auto;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-            font-weight: 350;
-            font-size: calc(220% * var(--header-size));
-            transition-property: opacity;
-            transition-duration: 0.5s;
+        a {
+            margin-left: 1rem;
+            flex: 1;
+            height: 100%;
+            background: var(--logo) no-repeat center center;
 
-            .wide {
-                font-stretch: expanded;
+            &:after {
+                content: "carolyne fabre";
+                font-size: 150%;
+                visibility: hidden;
             }
         }
     }
@@ -279,7 +284,7 @@ body {
 
             h1 {
                 margin: 0 2rem;
-                font-size: 1000%;
+                font-size: 900%;
                 font-weight: 350;
                 word-break: break-word;
 
