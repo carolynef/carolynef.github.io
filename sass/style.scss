@@ -22,8 +22,9 @@
     --header-size: 1;
     --menu-open-opacity: 10%;
 
-    --thumbnail-width-unit: 350px;
-    --thumbnail-height-unit: 250px;
+    --thumbnail-font-size: 1;
+    --thumbnail-width-unit: 500px;
+    --thumbnail-height-unit: 380px;
     --thumbnail-gutter: 16px;
     --thumbnail-overlay-main-color: black;
     --thumbnail-overlay-background-color: rgba(255, 255, 255, 0.75);
@@ -31,16 +32,18 @@
     @media screen and (min-width: 641px) and (max-width: 1200px) {
         --minimum-page-margin: 0;
         --header-size: 0.75;
-        --thumbnail-width-unit: 200px;
-        --thumbnail-height-unit: 120px;
+        --thumbnail-font-size: 0.9;
+        --thumbnail-width-unit: 280px;
+        --thumbnail-height-unit: 212px;
         --thumbnail-gutter: 8px;
     }
 
     @media screen and (max-width: 640px) {
         --minimum-page-margin: 0;
         --header-size: 0.5;
-        --thumbnail-width-unit: 100px;
-        --thumbnail-height-unit: 80px;
+        --thumbnail-font-size: 0.75;
+        --thumbnail-width-unit: 160px;
+        --thumbnail-height-unit: 120px;
         --thumbnail-gutter: 4px;
     }
 
@@ -445,9 +448,10 @@ body {
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
+                            font-size: calc(100% * var(--thumbnail-font-size));
 
                             h3 {
-                                font-size: 150%;
+                                font-size: calc(150% * var(--thumbnail-font-size));
                             }
                         }
 
@@ -488,6 +492,7 @@ body {
 
             article {
                 flex: 1;
+                font-size: 125%;
 
                 img.portrait {
                     max-width: calc(min(300px, 100vw) - 2rem);
@@ -496,13 +501,12 @@ body {
 
                 h1 {
                     white-space: nowrap;
-                    font-size: 200%;
+                    font-size: 300%;
                 }
 
                 @media screen and (min-width: 639px) {
                     h1.side {
-                        margin: 0 0 0 5rem;
-                        height: 80%;
+                        margin: 0 0 5rem 5rem;
                         text-align: right;
                         font-size: 800%;
                         float: right;
