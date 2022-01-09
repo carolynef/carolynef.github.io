@@ -12,7 +12,7 @@ year = ["2021"]
 [extra]
 image_urls = [
     "https://drive.google.com/uc?id=1tAoYwbL2tUL91Qioydpbu-_cSscFF64F",
-    "https://vimeo.com/664017713",
+    "https://player.vimeo.com/video/664017713",
     "https://drive.google.com/uc?id=1rbDtY6k3yw-dZRYVyfDTOivsj4QvW_xj",
 ]
 width = 1
