@@ -23,6 +23,4 @@ Illustration réalisée à des fins d'utilisation pour le cours d'animation.
 
 Une femme se laisse porter sur l'eau, et rêve de voyage sur fond de la musique [The Sun](https://www.youtube.com/watch?v=WTrNsAsjEmY) de [Parov Stelar](https://fr.wikipedia.org/wiki/Parov_Stelar).
 
-## Projet
-
-L'animation finale a été réalisée pour une story Instagram, en `1920x1080` pixels. Le thème étant libre, j'ai décidé de reprendre certaines illustrations que j'avais réalisées et de les animer pour le cours. 
+L'animation finale a été réalisée pour une story Instagram, en 1920x1080 pixels. Le thème étant libre, j'ai décidé de reprendre certaines illustrations que j'avais réalisées et de les animer pour le cours.
