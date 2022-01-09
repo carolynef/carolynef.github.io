@@ -18,7 +18,7 @@
         src="{{ get_url(path='js/imagesloaded.pkgd.min.js', trailing_slash=false) }}"></script>
 </head>
 
-<body>
+<body class="{% block body_class %}{% endblock body_class %}">
     {% block menu %}
     <nav id="menu">
         <ul>

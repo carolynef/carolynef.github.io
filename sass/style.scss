@@ -53,13 +53,18 @@ body {
     --main-color: var(--main-color-light);
     --secondary-color: var(--secondary-color-light);
     --background-color: var(--background-color-light);
+    --main-color-reverse: var(--main-color-dark);
+    --secondary-color-reverse: var(--secondary-color-dark);
+    --background-color-reverse: var(--background-color-dark);
 
-    @media (hover: hover) {
-        &.invert:not(.menu-open) {
-            --main-color: var(--main-color-dark);
-            --secondary-color: var(--secondary-color-dark);
-            --background-color: var(--background-color-dark);
-        }
+    &.negate,
+    &.invert:not(.menu-open) {
+        --main-color: var(--main-color-dark);
+        --secondary-color: var(--secondary-color-dark);
+        --background-color: var(--background-color-dark);
+        --main-color-reverse: var(--main-color-light);
+        --secondary-color-reverse: var(--secondary-color-light);
+        --background-color-reverse: var(--background-color-light);
     }
 
     font-family: var(--main-font);
@@ -96,10 +101,6 @@ body {
     /* Menu */
 
     #menu {
-        --main-color: var(--main-color-dark);
-        --secondary-color: var(--secondary-color-dark);
-        --background-color: var(--background-color-dark);
-
         display: flex;
         position: fixed;
         text-align: center;
@@ -116,8 +117,8 @@ body {
 
         margin: 0;
         padding: 0;
-        color: var(--main-color);
-        background-color: var(--background-color);
+        color: var(--main-color-reverse);
+        background-color: var(--background-color-reverse);
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -164,7 +165,7 @@ body {
         text-align: center;
 
         &:hover {
-            color: var(--secondary-color);
+            color: var(--secondary-color-reverse);
             text-decoration: none;
         }
 
@@ -180,11 +181,12 @@ body {
         #menu {
             transform: translate(0%);
         }
+
         a#menu-toggle {
-            color: var(--main-color-dark);
+            color: var(--main-color-reverse);
 
             &:hover {
-                color: var(--secondary-color-dark);
+                color: var(--secondary-color-reverse);
             }
 
             &::after {
@@ -211,10 +213,6 @@ body {
         transition-duration: 0.25s;
         transition-timing-function: ease;
         background-color: transparent;
-
-        @media screen and (max-width: 1200px) {
-            background-color: var(--background-color);
-        }
 
         h2 {
             pointer-events: auto;
@@ -484,13 +482,29 @@ body {
             article {
                 flex: 1;
 
+                img.portrait {
+                    max-width: calc(min(300px, 100vw) - 2rem);
+                    object-fit: contain;
+                }
+
                 h1 {
                     white-space: nowrap;
                     font-size: 200%;
                 }
 
-                img.portrait {
-                    max-width: 300px;
+                @media screen and (min-width: 639px) {
+                    h1.side {
+                        margin: 0 0 0 5rem;
+                        height: 100%;
+                        text-align: right;
+                        font-size: 800%;
+                        float: right;
+                        clear: both;
+                        text-transform: lowercase;
+                        writing-mode: vertical-rl;
+                        text-orientation: mixed;
+                        transform: rotate(180deg);
+                    }
                 }
             }
 

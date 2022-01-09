@@ -1,10 +1,12 @@
 {% extends "page.html" %}
 
+{% block body_class %}negate{% endblock body_class %}
+
 {% block page %}
 <div class="page-layout">
 	<article>
 		<img class="portrait" src="/images/portrait.png" />
-		<h1>{{ page.title }}</h1>
+		<h1 class="side">{{ page.title }}</h1>
 		{{ page.content | safe }}
 	</article>
 </div>
