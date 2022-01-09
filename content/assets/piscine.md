@@ -5,8 +5,8 @@ date = "2020-01-05"
 
 [taxonomies]
 categories = ["Illustration", "Animation"]
-tags = ["Projet scolaire"]
-softwares = ["Adobe Illustrator", "Adobe After Effects"]
+project_type = ["Projet scolaire"]
+softwares = ["Ai", "Ae"]
 year = ["2021"]
 
 [extra]
@@ -14,7 +14,7 @@ image_urls = [
     "https://drive.google.com/uc?id=1tAoYwbL2tUL91Qioydpbu-_cSscFF64F",
     "https://drive.google.com/uc?id=1rbDtY6k3yw-dZRYVyfDTOivsj4QvW_xj",
 ]
-video_urls = ["https://youtu.be/MHtSSstlqJA" ]
+video_urls = ["https://youtu.be/MHtSSstlqJA"]
 width = 1
 height = 1
 +++

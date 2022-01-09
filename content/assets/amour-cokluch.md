@@ -5,7 +5,7 @@ date = "2020-01-04"
 
 [taxonomies]
 categories = ["Illustration"]
-tags = ["Concours", "Illustration numérique", ""]
+project_type = ["Concours"]
 softwares = ["Procreate"]
 year = ["2020"]
 
@@ -20,7 +20,7 @@ height = 1
 +++
 Illustration gagnante du concours du designer de mode québecois Cokluch de 2020.
 
-Le concours « Ça va bien aller » du designer Cokluch demandait d'illustrer la notion « Ça va bien aller », liée à la COVID-19 et au confinement au printemps 2020. 
+Le concours « Ça va bien aller » du designer Cokluch demandait d'illustrer la notion « Ça va bien aller », liée à la COVID-19 et au confinement au printemps 2020.
 
 Cette situation et le dicton « Ça va bien aller » sont représentés par ces mains liées, symboles d'entraide et d'amour, qui contrastent avec les gestes barrières et la distanciation sociale. L'illustration dans le contexte de la COVID-19 nous rappelle l'importance de prendre soin de notre entourage, et nous montre que même en ces temps difficiles, nous sommes tous unis (encore plus que jamais), et ce même à distance!
 

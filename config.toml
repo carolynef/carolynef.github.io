@@ -14,6 +14,7 @@ taxonomies = [
 	{name="categories"},
 	{name="softwares"},
 	{name="year"},
+	{name="project_type"},
 	{name="tags"},
 ]
 
@@ -28,11 +29,18 @@ description = "Portfolio de Carolyne Fabre"
 linkedin_url = "https://www.linkedin.com/in/carolyne-fabre-b4a82680/"
 instagram_url = "https://www.instagram.com/carolyyyne_/"
 featured_categories = ["Identité visuelle", "Packaging", "Mise en page", "Illustration"]
-featured_taxonomies = ["categories", "year", "softwares", "tags"]
+featured_taxonomies = ["categories", "year", "project_type", "softwares", "tags"]
 
 # The translations for taxonomies.
 [extra.taxonomies_titles]
 categories = "Catégories"
 softwares = "Logiciels"
 year = "Année"
+project_type = "Type de projet"
 tags = "Tags"
+
+[extra.software_aliases]
+Ai = "Adobe Illustrator®"
+Ae = "Adobe After Effects®"
+Ps = "Adobe Photoshop®"
+Id = "Adobe InDesign®"

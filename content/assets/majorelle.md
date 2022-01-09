@@ -5,8 +5,9 @@ date = "2020-01-02"
 
 [taxonomies]
 categories = ["Illustration"]
-tags = ["Projet personnel", "Affiche vintage"]
-softwares = ["Adobe Illustrator"]
+project_type = ["Projet personnel"]
+tags = ["Affiche vintage"]
+softwares = ["Ai"]
 year = ["2020"]
 
 [extra]

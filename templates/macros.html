@@ -5,3 +5,11 @@
 {{ root ~ url }}
 {% endif %}
 {% endmacro %}
+
+{% macro resolve_aliases(taxonomy, name) %}
+{% if taxonomy == "softwares" %}
+{{ config.extra.software_aliases | get(key=name, default=name) }}
+{% else %}
+{{ name }}
+{% endif %}
+{% endmacro %}

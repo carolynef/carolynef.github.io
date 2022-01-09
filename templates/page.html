@@ -13,7 +13,9 @@
 		<h2>{{ config.extra.taxonomies_titles[taxonomy] }}</h2>
 		<ul>
 			{% for item in items %}
-			<li><a href="{{ get_taxonomy_url(kind=taxonomy, name=item) }}">{{ item }}</a></li>
+			<li><a href="{{ get_taxonomy_url(kind=taxonomy, name=item) }}" title="{{ macros::resolve_aliases(taxonomy=taxonomy,
+					name=item) }}">{{ item }}</a>
+			</li>
 			{% endfor %}
 		</ul>
 		{% endif %}

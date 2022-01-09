@@ -5,9 +5,10 @@ date = "2020-01-03"
 
 [taxonomies]
 categories = ["Illustration"]
-tags = ["Projet personnel", "Affiche vintage"]
-softwares = ["Adobe Illustrator"]
+project_type = ["Projet personnel"]
+softwares = ["Ai"]
 year = ["2020"]
+tags = ["Affiche vintage"]
 
 [extra]
 image_urls = [
