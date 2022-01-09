@@ -64,6 +64,16 @@ function setupScroll() {
 
         lastScroll = currentScroll;
     });
+
+    window.addEventListener('resize', (e) => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll >= 16) {
+            document.body.classList.add(scrollPastHeader);
+        } else {
+            document.body.classList.remove(scrollPastHeader);
+        }
+    });
 }
 
 setupToggle();
