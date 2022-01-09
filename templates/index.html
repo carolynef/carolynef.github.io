@@ -83,7 +83,7 @@
                             alt="{{ asset.description }}">
                         <div class="overlay">
                             <h3>{{ asset.title }}</h3>
-                            <p>{{ asset.taxonomies.categories | join(sep=' &dash; ') | safe }}</p>
+                            <p>{{ asset.taxonomies.categories | sort | join(sep=' – ') | safe }}</p>
                         </div>
                     </a>
                 </div>
