@@ -6,6 +6,25 @@
 		<h1>{{ page.title }}</h1>
 		{{ page.content | safe }}
 	</article>
+	<div class="info">
+		{% for taxonomy in config.extra.featured_taxonomies %}
+		{% set items = page.taxonomies | get(key=taxonomy, default=[]) %}
+		{% if items %}
+		<h2>{{ config.extra.taxonomies_titles[taxonomy] }}</h2>
+		<ul>
+			{% for item in items %}
+			<li><a href="{{ get_taxonomy_url(kind=taxonomy, name=item) }}">{{ item }}</a></li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		{% endfor %}
+	</div>
+</div>
+<div class="images-list">
+	{% for image in page.extra.image_urls %}
+	{% set image_url = macros::image_url(root=page.path, url=image) %}
+	<a href="{{ image_url }}" target="_blank"><img src="{{ image_url }}" alt="{{ page.title }}"></a>
+	{% endfor %}
 </div>
 {% endblock page %}
 

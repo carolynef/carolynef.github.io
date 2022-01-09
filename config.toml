@@ -7,6 +7,16 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+default_language = "fr"
+
+# The taxonomies.
+taxonomies = [
+	{name="categories"},
+	{name="softwares"},
+	{name="year"},
+	{name="tags"},
+]
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -17,3 +27,12 @@ author = "Carolyne Fabre"
 description = "Portfolio de Carolyne Fabre"
 linkedin_url = "https://www.linkedin.com/in/carolyne-fabre-b4a82680/"
 instagram_url = "https://www.instagram.com/carolyyyne_/"
+featured_categories = ["Identité visuelle", "Packaging", "Mise en page", "Illustration"]
+featured_taxonomies = ["categories", "year", "softwares", "tags"]
+
+# The translations for taxonomies.
+[extra.taxonomies_titles]
+categories = "Catégories"
+softwares = "Logiciels"
+year = "Année"
+tags = "Tags"

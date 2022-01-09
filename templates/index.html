@@ -50,9 +50,9 @@
         </div>
         <div id="categories">
             <ul>
-                {% for category_url in section.subsections %}
-                {% set category = get_section(path=category_url) %}
-                <li><a href="#{{ category.title | slugify }}">{{ category.title }}</a></li>
+                {% set categories = config.extra.featured_categories %}
+                {% for category in categories %}
+                <li><a href="#{{ category | slugify }}">{{ category }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -64,32 +64,29 @@
                         <a id="all" class="route" href="#all">tous</a>
                     </li>
 
-                    {% for category_url in section.subsections %}
-                    {% set category = get_section(path=category_url) %}
+                    {% set categories = get_taxonomy(kind="categories") %}
+                    {% for category in categories.items %}
                     <li>
-                        <a id="{{ category.title | slugify }}" class="route" href="#{{ category.title | slugify }}">{{
-                            category.title }}</a>
+                        <a id="{{ category.slug }}" class="route" href="#{{ category.slug }}">{{ category.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>
             </nav>
             <div class="thumbnails">
                 <div class="thumbnails-sizer"></div>
-                {% for category_url in section.subsections %}
-                {% set category = get_section(path=category_url) %}
-                {% for page in category.pages %}
-                <div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
-                    data-category="{{ category.title | slugify }}">
-                    <a href="{{ page.permalink }}">
-                        <img src="{{ macros::image_url(root=page.path, url=page.extra.image_urls[0]) }}"
-                            alt="{{ page.title }}">
+                {% set assets = get_section(path="assets/_index.md") %}
+                {% for asset in assets.pages %}
+                <div class="thumbnail thumbnail-w{{ asset.extra.width | default(value=1) }} thumbnail-h{{ asset.extra.height | default(value=1) }}"
+                    data-category="{% for category in asset.taxonomies.categories %}{{ category | slugify }}{% if not loop.last %},{% endif %}{% endfor %}">
+                    <a href="{{ asset.permalink }}" title="{{ asset.description }}">
+                        <img src="{{ macros::image_url(root=asset.path, url=asset.extra.image_urls[0]) }}"
+                            alt="{{ asset.description }}">
                         <div class="overlay">
-                            <h3>{{ page.title }}</h3>
-                            <p>{{ category.title }}</p>
+                            <h3>{{ asset.title }}</h3>
+                            <p>{{ asset.taxonomies.categories | join(sep=' &dash; ') | safe }}</p>
                         </div>
                     </a>
                 </div>
-                {% endfor %}
                 {% endfor %}
             </div>
         </div>

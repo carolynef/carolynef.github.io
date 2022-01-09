@@ -5,7 +5,7 @@ function categoryMatches(element, category) {
         return true;
     }
 
-    return element.dataset.category === category;
+    return element.dataset.category.split(",").includes(category);
 }
 
 function getGutter(element) {
