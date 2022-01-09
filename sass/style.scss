@@ -158,7 +158,8 @@ body {
         display: flex;
         align-items: center;
         transition-property: top;
-        transition-duration: 0.5s;
+        transition-duration: 0.25s;
+        transition-timing-function: ease;
         text-align: center;
 
         &:hover {
@@ -206,7 +207,8 @@ body {
         align-items: center;
         padding: 0;
         transition-property: top, color, background-color;
-        transition-duration: 0.5s;
+        transition-duration: 0.25s;
+        transition-timing-function: ease;
         background-color: transparent;
 
         @media screen and (max-width: 1200px) {
@@ -248,7 +250,10 @@ body {
 
     div#page {
         position: relative;
-        margin: calc(var(--header-height) * var(--header-size)) var(--page-margin) 0 var(--page-margin);
+        margin-top: calc(var(--header-height) * var(--header-size));
+        margin-left: var(--page-margin);
+        margin-bottom: 0;
+        margin-right: var(--page-margin);
         display: flex;
         flex-direction: column;
         align-items: stretch;

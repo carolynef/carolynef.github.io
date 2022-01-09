@@ -28,7 +28,7 @@
 	<a href="{{ image_url }}" target="_blank">
 		{% if image is starting_with('https://player.vimeo.com/video/') %}
 		<iframe src="{{ image }}" width="1600" height="1200" frameborder="0"
-			allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+			allow="autoplay; fullscreen; picture-in-picture"></iframe>
 		{% else %}
 		<img src="{{ image_url }}" alt="{{ page.title }}">
 		{% endif %}
