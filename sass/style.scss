@@ -14,7 +14,8 @@
     --secondary-color-dark: #ccc;
     --background-color-dark: black;
 
-    --global-margin: 200px;
+    --minimum-page-margin: 200px;
+    --maximum-page-width: 1200px;
     --header-height: 200px;
     --header-size: 1;
     --menu-open-opacity: 10%;
@@ -26,7 +27,7 @@
     --thumbnail-overlay-background-color: rgba(255, 255, 255, 0.75);
 
     @media screen and (min-width: 641px) and (max-width: 1200px) {
-        --global-margin: 0;
+        --minimum-page-margin: 0;
         --header-size: 0.75;
         --thumbnail-width-unit: 200px;
         --thumbnail-height-unit: 120px;
@@ -34,12 +35,14 @@
     }
 
     @media screen and (max-width: 640px) {
-        --global-margin: 0;
+        --minimum-page-margin: 0;
         --header-size: 0.5;
         --thumbnail-width-unit: 100px;
         --thumbnail-height-unit: 80px;
         --thumbnail-gutter: 4px;
     }
+
+    --page-margin: max(var(--minimum-page-margin), calc((100vw - var(--maximum-page-width)) / 2));
 }
 
 html {
@@ -150,7 +153,7 @@ body {
         z-index: 5;
         top: 0;
         right: 0;
-        min-width: var(--global-margin);
+        min-width: var(--minimum-page-margin);
         height: calc(var(--header-height) * var(--header-size));
         display: flex;
         align-items: center;
@@ -195,7 +198,7 @@ body {
         pointer-events: none;
         z-index: 1;
         top: 0;
-        min-width: var(--global-margin);
+        min-width: var(--minimum-page-margin);
         height: calc(var(--header-height) * var(--header-size));
         display: flex;
         flex-direction: row;
@@ -241,7 +244,7 @@ body {
 
     div#page {
         position: relative;
-        margin: calc(var(--header-height) * var(--header-size)) var(--global-margin) 0 var(--global-margin);
+        margin: calc(var(--header-height) * var(--header-size)) var(--page-margin) 0 var(--page-margin);
         display: flex;
         flex-direction: column;
         align-items: stretch;
