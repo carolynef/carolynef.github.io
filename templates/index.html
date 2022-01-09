@@ -18,7 +18,7 @@
         src="{{ get_url(path='js/imagesloaded.pkgd.min.js', trailing_slash=false) }}"></script>
 </head>
 
-<body class="{% block body_class %}index{% endblock body_class %}">
+<body class="{% block body_class %}{% endblock body_class %}">
     {% block menu %}
     <nav id="menu">
         <ul>
@@ -44,10 +44,11 @@
     {% endblock header %}
 
     <div id="page">
+        {% block page %}
         <div id="watermark">
             <h1>ALLÔ&#8239;! VOICI<br />MON PORT&shy;fOLIO</h1>
         </div>
-        {% block page %}
+
         <div id="categories">
             <ul>
                 {% set categories = config.extra.featured_categories %}

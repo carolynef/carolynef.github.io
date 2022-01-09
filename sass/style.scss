@@ -276,11 +276,14 @@ body {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            margin: 4rem 0;
             z-index: -1;
             user-select: none;
             text-align: center;
-            opacity: 3%;
+            opacity: 1;
+            margin: 0;
+            min-height: calc(100vh - var(--header-height) * var(--header-size));
+            animation: 1s ease-in-out 1s dissolve-almost;
+            animation-fill-mode: forwards;
 
             h1 {
                 margin: 0 2rem;
@@ -552,18 +555,6 @@ body {
                 img {
                     max-width: 100%;
                 }
-            }
-        }
-    }
-
-    &.index {
-        div#page {
-            div#watermark {
-                opacity: 1;
-                margin: 0;
-                min-height: calc(100vh - var(--header-height) * var(--header-size));
-                animation: 1s ease-in-out 1s dissolve-almost;
-                animation-fill-mode: forwards;
             }
         }
     }
