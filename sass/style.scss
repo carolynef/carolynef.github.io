@@ -221,6 +221,10 @@ body {
             font-size: calc(220% * var(--header-size));
             transition-property: opacity;
             transition-duration: 0.5s;
+
+            .wide {
+                font-stretch: expanded;
+            }
         }
     }
 
@@ -251,6 +255,7 @@ body {
         justify-content: center;
         transition-property: opacity;
         transition-duration: 0.5s;
+        overflow: auto;
 
         div#watermark {
             position: absolute;

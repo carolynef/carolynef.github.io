@@ -4,6 +4,16 @@
     font-weight: 100 900;
     font-display: swap;
     font-style: normal;
+    font-stretch: 50% 150%;
+}
+
+@font-face {
+    font-family: "PPAgrandir";
+    src: url("/webfonts/PPAgrandir-Italic.ttf") format("truetype");
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+    font-stretch: 50% 150%;
 }
 
 :root {
