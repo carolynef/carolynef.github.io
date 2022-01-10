@@ -1,4 +1,4 @@
 +++
 title = "Assets"
-sort_by="Date"
+sort_by = "date"
 +++
