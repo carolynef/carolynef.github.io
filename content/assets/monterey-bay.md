@@ -2,6 +2,7 @@
 title = "Monterey Bay"
 description = "Illustration de Monterey Bay, en Californie"
 date = "2019-01-01"
+weight = 1
 
 [taxonomies]
 categories = ["Illustration"]

@@ -76,7 +76,7 @@
             <div class="thumbnails">
                 <div class="thumbnails-sizer"></div>
                 {% set assets = get_section(path="assets/_index.md") %}
-                {% for asset in assets.pages %}
+                {% for asset in assets.pages | reverse %}
                 <div class="thumbnail thumbnail-w{{ asset.extra.width | default(value=1) }} thumbnail-h{{ asset.extra.height | default(value=1) }}"
                     data-category="{% for category in asset.taxonomies.categories %}{{ category | slugify }}{% if not loop.last %},{% endif %}{% endfor %}">
                     <a href="{{ asset.permalink }}" title="{{ asset.description }}">

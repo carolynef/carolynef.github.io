@@ -2,6 +2,7 @@
 title = "Branding example"
 description = "Branding example description"
 date = "2019-01-01"
+weight = 1
 
 [taxonomies]
 categories = ["Identité visuelle"]

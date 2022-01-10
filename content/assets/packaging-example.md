@@ -2,6 +2,7 @@
 title = "Packaging example"
 description = "Packaging example description"
 date = "2019-01-01"
+weight = 1
 
 [taxonomies]
 categories = ["Packaging"]

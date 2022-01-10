@@ -1,4 +1,4 @@
 +++
 title = "Assets"
-sort_by = "date"
+sort_by = "weight"
 +++

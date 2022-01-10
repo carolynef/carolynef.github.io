@@ -2,6 +2,7 @@
 title = "Follow the sun"
 description = "Illustration Summer Vibe et animation"
 date = "2020-01-05"
+weight = 1
 
 [taxonomies]
 categories = ["Illustration", "Animation"]
