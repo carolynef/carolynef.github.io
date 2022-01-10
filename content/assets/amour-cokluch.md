@@ -11,9 +11,10 @@ year = ["2020"]
 
 [extra]
 image_urls = [
+    "https://drive.google.com/uc?id=1r_P8WRtRzKCqdJfkTDNaxW6YztppGz95",
     "https://drive.google.com/uc?id=1rZQDWL0DIiKOOkJgDQrUtkjyk9u-hhuP",
     "https://drive.google.com/uc?id=1r_3Gkblsjd9xD85L2EiI0r6RRo114pwg",
-    "https://drive.google.com/uc?id=1r_P8WRtRzKCqdJfkTDNaxW6YztppGz95"
+
 ]
 width = 1
 height = 1
