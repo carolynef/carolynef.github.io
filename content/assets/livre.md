@@ -20,5 +20,5 @@ width = 1
 height = 1
 +++
 
-Projet : Création d'une couverture pour le livre l'Élégance du hérisson de Muriel Barbery.
+Mandat : Création d'une couverture pour le livre l'Élégance du hérisson de Muriel Barbery.
 Proposition : L'emphase est mise sur le hérisson, qui est représenté de façon abstraite et gribouillée pour contraster avec le terme élégance du titre. L'illustration et le titre sont en vernis sélectif en relief pour donner du relief à la couverture. Le papier a un fini velouté et doux au toucher.
