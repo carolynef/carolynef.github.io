@@ -13,8 +13,9 @@ tags = ["publicité"]
 [extra]
 image_urls = [
     "https://drive.google.com/uc?id=1Bjo3Xs9xKkFeiG5omc_gNrfuuNLghMuu",
-    "https://drive.google.com/uc?id=1BTd-jFcW1RTW6Wlb4pk1So0j3dGGSu3U",
-    "https://drive.google.com/uc?id=1BboCYo27n5oIPAH85dioIgM6gGNFpq-X",
+    "https://drive.google.com/uc?id=1CFUT64u618S4bDePuVrAvrmy_RGGo0tr",
+    "https://drive.google.com/uc?id=1C6rx8ZFteiYE8ZPsJ25CSI6du7qROGHp",
+    "https://drive.google.com/uc?id=1CIHucjOI_77VqVuxnzeHVDS7kUJaMtGN",
 ]
 width = 1
 height = 1
