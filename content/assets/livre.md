@@ -1,12 +1,12 @@
 +++
 title = "Couverture de livre"
 description = "Couverture de livre"
-date = "2020-01-03"
+date = "2021-01-02"
 
 [taxonomies]
 categories = ["Mise en page"]
 project_type = ["Projet scolaire"]
-softwares = ["Ai", "Ps"]
+softwares = ["Ai", "Ps",]
 year = ["2021"]
 tags = ["Livre", "Couverture",]
 
