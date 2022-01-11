@@ -2,7 +2,7 @@
 title = "Amour"
 description = "Concours Cokluch \"Ça va bien aller\" - illustration gagnante"
 date = "2020-01-04"
-weight = 1
+weight = 6
 
 [taxonomies]
 categories = ["Illustration"]
