@@ -2,7 +2,7 @@
 title = "Couverture de livre"
 description = "Couverture de livre"
 date = "2021-01-02"
-weight = 8
+weight = 9
 
 [taxonomies]
 categories = ["Mise en page"]
