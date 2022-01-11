@@ -2,7 +2,7 @@
 title = "Oh barista"
 description = "Branding et packaging pour un microtorréfacteur"
 date = "2021-01-02"
-weight = 8
+weight = 5
 
 [taxonomies]
 categories = ["packaging", "identité visuelle"]
