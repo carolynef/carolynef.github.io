@@ -1,5 +1,5 @@
 +++
-title = "Amour"
+title = "Amour - designer de mode Cokluch"
 description = "Concours Cokluch \"Ça va bien aller\" - illustration gagnante"
 date = "2020-01-04"
 weight = 6
