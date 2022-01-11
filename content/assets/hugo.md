@@ -2,7 +2,8 @@
 title = "Création typographique"
 description = "Création d'une typographie pour un faire-part"
 date = "2021-01-03"
-weight = 3
+weight = 6
+
 
 [taxonomies]
 categories = ["Mise en page", "Illustration"]
