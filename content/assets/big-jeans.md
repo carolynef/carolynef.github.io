@@ -2,7 +2,7 @@
 title = "Big Jeans"
 description = "Packaging pour une marque de jeans"
 date = "2021-01-02"
-weight = 8
+weight = 5
 
 [taxonomies]
 categories = ["packaging", "identité visuelle"]
