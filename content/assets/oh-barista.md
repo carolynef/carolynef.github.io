@@ -5,7 +5,7 @@ date = "2021-01-02"
 weight = 8
 
 [taxonomies]
-categories = ["packaging", "identité visuelle"]
+categories = ["Packaging", "ùIdentité visuelle"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Ps",]
 year = ["2021"]

@@ -6,7 +6,7 @@ weight = 7
 
 
 [taxonomies]
-categories = ["packaging", "web-design"]
+categories = ["Packaging", "Design web"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Ps", "Id", "Visual Studio Code",]
 year = ["2021"]

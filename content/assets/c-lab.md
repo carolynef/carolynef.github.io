@@ -6,7 +6,7 @@ weight = 1
 
 
 [taxonomies]
-categories = ["identité visuelle"]
+categories = ["Identité visuelle"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Id", "Ae"]
 year = ["2021"]
