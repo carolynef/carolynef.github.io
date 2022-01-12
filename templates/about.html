@@ -5,12 +5,11 @@
 {% block page %}
 <div class="page-layout">
 	<article>
+		<img class="portrait" src="/images/portrait.png" />
 		<h1 class="side">{{ page.title }}</h1>
-
-		<iframe id="contact"
-			src="https://docs.google.com/forms/d/e/1FAIpQLSf-b4mT0H_oTe_HKIv81_JcwSPp9IfHshLBq6yIfc8R9ssdhg/viewform?embedded=true"
-			height="900" frameborder="0">Chargement en
-			cours…</iframe>
+		<div>
+			{{ page.content | safe }}
+		</div>
 	</article>
 </div>
 {% endblock page %}

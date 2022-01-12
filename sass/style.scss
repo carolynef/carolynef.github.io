@@ -528,18 +528,9 @@ body {
                     font-size: 300%;
                 }
 
-                @media screen and (min-width: 639px) {
-                    h1.side {
-                        margin: 0 0 5rem 5rem;
-                        text-align: right;
-                        font-size: 800%;
-                        float: right;
-                        clear: both;
-                        text-transform: lowercase;
-                        writing-mode: vertical-rl;
-                        text-orientation: mixed;
-                        transform: rotate(180deg);
-                    }
+                iframe#contact {
+                    display: block;
+                    width: 100%;
                 }
             }
 
