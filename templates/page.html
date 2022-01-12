@@ -1,7 +1,5 @@
 {% extends "index.html" %}
 
-{% block body_class %}{% endblock body_class %}
-
 {% block page %}
 <div class="page-layout">
 	<article>
@@ -12,7 +10,13 @@
 		{% for taxonomy in config.extra.featured_taxonomies %}
 		{% set items = page.taxonomies | get(key=taxonomy, default=[]) %}
 		{% if items %}
-		<h2>{{ config.extra.taxonomies_titles[taxonomy] }}</h2>
+		{% if items | length == 1 %}
+		{% set plural = 0 %}
+		{% else %}
+		{% set plural = 1 %}
+		{% endif %}
+
+		<h2>{{ config.extra.taxonomies_titles[taxonomy][plural] }}</h2>
 		<ul>
 			{% for item in items %}
 			<li><a href="{{ get_taxonomy_url(kind=taxonomy, name=item) }}" title="{{ macros::resolve_aliases(taxonomy=taxonomy,

@@ -13,3 +13,54 @@
 {{ name }}
 {% endif %}
 {% endmacro %}
+
+{% macro thumbnails(section, taxonomy_kind) %}
+<div id="thumbnails-container">
+	<nav>
+		<ul>
+			<li>
+				<a id="all" class="route" href="#all">tous</a>
+			</li>
+
+			{% set taxonomy = get_taxonomy(kind=taxonomy_kind) %}
+			{% for item in taxonomy.items %}
+
+			{% set_global has_item = false %}
+			{% for page in section.pages %}
+			{% set taxonomies = page.taxonomies | get(key=taxonomy_kind) %}
+			{% if taxonomies is containing(item.name) %}
+			{% set_global has_item = true %}
+			{% break %}
+			{% endif %}
+			{% endfor %}
+
+			{% if has_item %}
+			<li>
+				<a id="{{ taxonomy_kind }}__{{ item.slug }}" class="route"
+					href="#{{ taxonomy_kind }}__{{ item.slug }}">{{ item.name }}</a>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+	<div class="thumbnails">
+		<div class="thumbnails-sizer"></div>
+		{% for page in section.pages | reverse %}
+		<div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
+			{% for taxonomy_kind, taxonomies in page.taxonomies %} {% if taxonomies %} data-{{ taxonomy_kind
+			}}="{% for taxonomy in taxonomies %}{{ taxonomy | slugify }}{% if not loop.last %},{% endif %}{% endfor %}"
+			{% endif %}{% endfor %}>
+			<a href="{{ page.permalink }}" title="{{ page.description }}">
+				<img src="{{ macros::image_url(root=page.path, url=page.extra.image_urls[0]) }}"
+					alt="{{ page.description }}">
+				<div class="overlay">
+					<h3>{{ page.title }}</h3>
+					<p>{{ page.taxonomies | get(key=taxonomy_kind) | sort | join(sep=' – ') | safe
+						}}</p>
+				</div>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endmacro %}

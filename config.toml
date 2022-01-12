@@ -33,11 +33,11 @@ featured_taxonomies = ["categories", "year", "project_type", "softwares", "tags"
 
 # The translations for taxonomies.
 [extra.taxonomies_titles]
-categories = "Catégories"
-softwares = "Logiciels"
-year = "Année"
-project_type = "Type de projet"
-tags = "Tags"
+categories = ["Catégorie", "Catégories"]
+softwares = ["Logiciel", "Logiciels"]
+year = ["Année", "Années"]
+project_type = ["Type de projet", "Types de projet"]
+tags = ["Tag", "Tags"]
 
 [extra.software_aliases]
 Ai = "Adobe Illustrator®"

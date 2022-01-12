@@ -224,7 +224,7 @@ body {
         background-color: transparent;
 
         a {
-            margin-left: 1rem;
+            margin: 0 1rem;
             flex: 1;
             height: 100%;
             background: var(--logo) no-repeat center center;
@@ -346,8 +346,9 @@ body {
             }
         }
 
-        div#categories-detail {
+        div#thumbnails-container {
             padding: 0 1rem;
+            min-height: calc(100vh - var(--header-height) * 2);
 
             nav {
                 ul {
@@ -465,6 +466,28 @@ body {
             }
         }
 
+        h1.taxonomies {
+            text-align: center;
+
+            & + ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                text-align: center;
+
+                & li {
+                    font-weight: normal;
+                    font-style: italic;
+                    font-size: 200%;
+                }
+            }
+        }
+
+        h1.taxonomy {
+            text-align: center;
+            font-weight: normal;
+        }
+
         div.page-layout {
             padding: 0 1rem;
             display: flex;
@@ -474,8 +497,9 @@ body {
             justify-content: space-between;
             gap: 2rem;
 
-            @media screen and (max-width: 640px) {
+            @media screen and (max-width: 1200px) {
                 font-size: 80%;
+                flex-direction: column;
             }
 
             a {
@@ -500,7 +524,7 @@ body {
                 }
 
                 h1 {
-                    white-space: nowrap;
+                    margin-top: 0;
                     font-size: 300%;
                 }
 

@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block page %}
+<h1 class="taxonomies">Liste des {{ config.extra.taxonomies_titles[taxonomy.name].1 | lower }}</h1>
+<ul>
+	{% for term in terms %}
+	<li>
+		<a href="{{ term.permalink }}">{{ macros::resolve_aliases(taxonomy=taxonomy.name, name=term.name) }}</a>
+	</li>
+	{% endfor %}
+</ul>
+{% endblock page %}
