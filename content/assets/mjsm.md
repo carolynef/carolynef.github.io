@@ -14,8 +14,10 @@ tags = ["Identité visuelle", "Animation", "Web-design", "Mise en page" ]
 
 [extra]
 image_urls = [
+    "https://drive.google.com/uc?id=1FjlMBB41YqZ8NlBELTp5C7Gw4VfJgn8I",
+    "https://drive.google.com/uc?id=1G5OFusFcHgSnvxoF63nuz4-rNs_w2bFI",
     "https://drive.google.com/uc?id=1Fx_ppaKBngBaxFTRbyhW8r-0UiAHYFJz",
-    "https://drive.google.com/uc?id=1DtOgYMK1BF1Cgh--Js8mc8zNK3QiPozK",
+
     "https://player.vimeo.com/video/665237598",
     "https://player.vimeo.com/video/665235149",
 
