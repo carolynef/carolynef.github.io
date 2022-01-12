@@ -9,7 +9,7 @@ categories = ["Packaging", "Identité visuelle"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Ps",]
 year = ["2021"]
-tags = ["Packaging", "étiquettes", "éco-responsable"]
+tags = ["Packaging", "Étiquettes", "Éco-responsable"]
 
 [extra]
 image_urls = [
