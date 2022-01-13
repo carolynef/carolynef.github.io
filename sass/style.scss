@@ -517,6 +517,7 @@ body {
             article {
                 flex: 1;
                 font-size: 125%;
+                width: 100%;
 
                 img.portrait {
                     max-width: calc(min(300px, 100vw) - 2rem);
@@ -529,8 +530,14 @@ body {
                 }
 
                 iframe#contact {
-                    display: block;
                     width: 100%;
+                    min-height: 800px;
+                }
+
+                @media screen and (max-width: 1200px) {
+                    iframe#contact {
+                        min-height: 1000px;
+                    }
                 }
             }
 
