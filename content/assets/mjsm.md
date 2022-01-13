@@ -2,7 +2,7 @@
 title = "Mouvement Jeunes et santé mentale"
 description = "Identité visuelle pour le MJSM"
 date = "2021-01-02"
-weight = 8
+weight = 6
 
 
 [taxonomies]
@@ -10,12 +10,13 @@ categories = ["Identité visuelle", "Design web", "Mise en page",]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Id", "PS", "Xd", "Ae"]
 year = ["2021"]
-tags = ["Identité visuelle", "Animation", "Web-design", "Mise en page" ]
+tags = ["Identité visuelle", "Animation", "Mise en page", "Site web" ]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1FjlMBB41YqZ8NlBELTp5C7Gw4VfJgn8I",
+    "https://drive.google.com/uc?id=1LerN6gWTTodMlxXB2_xuZzXJUKbLKtbv",
     "https://drive.google.com/uc?id=1G5OFusFcHgSnvxoF63nuz4-rNs_w2bFI",
+
     "https://drive.google.com/uc?id=1Fx_ppaKBngBaxFTRbyhW8r-0UiAHYFJz",
 
     "https://player.vimeo.com/video/665237598",
@@ -38,7 +39,7 @@ La représentation des deux éléments était importante et permet une identific
 
 Les couleurs sont toujours proposées en aplat et viennent en duo : fushia et mauve, rouge et orange, vert et jaune.
 
-Mention spéciale :
-Projet d'équipe, avec Olivier Perron et Danja Codina
+*Mention spéciale :
+Projet d'équipe, avec Olivier Perron et Danja Codina*
 
 
