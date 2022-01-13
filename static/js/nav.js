@@ -45,15 +45,6 @@ function setupScroll() {
                 document.body.classList.remove(scrollDown);
                 document.body.classList.add(scrollUp);
             }
-
-            if (isTouchDevice()) {
-                if (currentScroll < getHeaderHeight()) {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    })
-                }
-            }
         }
 
         if (currentScroll >= 16) {
