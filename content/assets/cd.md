@@ -2,7 +2,7 @@
 title = "CD Growing Happiness"
 description = "Album CD et site web"
 date = "2021-01-02"
-weight = 7
+weight = 8
 
 
 [taxonomies]
@@ -10,7 +10,7 @@ categories = ["Packaging", "Design web"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Ps", "Id", "Visual Studio Code",]
 year = ["2021"]
-tags = ["Web", "Packaging", "Album CD", "CD", "éco-responsable"]
+tags = ["Site web", "Packaging", "Album CD", "éco-responsable"]
 
 [extra]
 image_urls = [

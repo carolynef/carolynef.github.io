@@ -2,7 +2,7 @@
 title = "C-LAB labo créatif"
 description = "Identité visuelle pour une agence de communication"
 date = "2021-01-02"
-weight = 1
+weight = 2
 
 
 [taxonomies]

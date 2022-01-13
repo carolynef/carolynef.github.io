@@ -2,7 +2,7 @@
 title = "Affiche Prospero"
 description = "Affiche pour une pièce de théâtre"
 date = "2021-01-04"
-weight = 1
+weight = 2
 
 [taxonomies]
 categories = ["Mise en page"]
