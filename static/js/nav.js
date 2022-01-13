@@ -14,10 +14,6 @@ function getHeaderHeight() {
         * parseInt(getComputedStyle(document.body).getPropertyValue('--header-height'));
 }
 
-function isTouchDevice() {
-    return window.ontouchstart !== undefined;
-}
-
 function setupScroll() {
     const scrollUp = "scroll-up";
     const scrollDown = "scroll-down";
