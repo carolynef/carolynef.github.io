@@ -2,14 +2,14 @@
 title = "Oh barista"
 description = "Branding et packaging pour un microtorréfacteur"
 date = "2021-01-02"
-weight = 8
+weight = 7
 
 [taxonomies]
 categories = ["Packaging", "Identité visuelle"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Ps",]
 year = ["2021"]
-tags = ["Packaging", "café", "éco-responsable"]
+tags = ["Packaging", "Café", "éco-responsable"]
 
 [extra]
 image_urls = [
