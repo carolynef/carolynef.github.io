@@ -1,8 +1,17 @@
-{% macro image_url(root, url) %}
+{% macro image_url(root, url, height=0, width=0) %}
 {% if url is starting_with('http') %}
 {{ url }}
 {% else %}
-{{ root ~ url }}
+{% set path = root ~ url %}
+{% if height %}
+{% set image = resize_image(path=path, height=height, op="fit_height") %}
+{{ image.url }}
+{% elif width %}
+{% set image = resize_image(path=path, width=width, op="fit_width") %}
+{{ image.url }}
+{% else %}
+{{ "/" ~ path }}
+{% endif %}
 {% endif %}
 {% endmacro %}
 
@@ -45,13 +54,15 @@
 	</nav>
 	<div class="thumbnails">
 		<div class="thumbnails-sizer"></div>
+		{% set assets = "assets/" %}
 		{% for page in section.pages | reverse %}
 		<div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
 			{% for taxonomy_kind, taxonomies in page.taxonomies %} {% if taxonomies %} data-{{ taxonomy_kind
 			}}="{% for taxonomy in taxonomies %}{{ taxonomy | slugify }}{% if not loop.last %},{% endif %}{% endfor %}"
 			{% endif %}{% endfor %}>
+
 			<a href="{{ page.permalink }}" title="{{ page.description }}">
-				<img src="{{ macros::image_url(root=page.path, url=page.extra.image_urls[0]) }}"
+				<img src="{{ macros::image_url(root=assets, url=page.extra.image_urls[0], height=380) }}"
 					alt="{{ page.description }}">
 				<div class="overlay">
 					<h3>{{ page.title }}</h3>
