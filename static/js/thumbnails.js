@@ -98,7 +98,6 @@ function hashChanged(elements, hash) {
     // If there is no current element, assume `all` was meant to be selected.
     if (currentElement === null) {
         for (const element of elements) {
-            console.log(element.id);
             if (element.id === 'all') {
                 element.classList.add('current');
             }
