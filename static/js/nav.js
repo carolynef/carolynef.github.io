@@ -43,7 +43,7 @@ function setupScroll() {
             }
         }
 
-        if (currentScroll >= 16) {
+        if (currentScroll >= 48) {
             document.body.classList.add(scrollPastHeader);
         } else {
             document.body.classList.remove(scrollPastHeader);

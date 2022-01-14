@@ -258,7 +258,7 @@ body {
     div#page {
         flex: 1;
         position: relative;
-        margin-top: calc(var(--header-height) * var(--header-size));
+        margin-top: calc(var(--header-height) * var(--header-size) * 1.5);
         margin-left: var(--page-margin);
         margin-bottom: 0;
         margin-right: var(--page-margin);
