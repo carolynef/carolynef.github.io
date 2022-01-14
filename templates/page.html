@@ -30,8 +30,8 @@
 </div>
 <div class="images-list">
 	{% for image in page.extra.image_urls %}
-	{% set page_image_url = macros::image_url(root="assets/", url=image, width=1600) %}
-	{% set direct_image_url = macros::image_url(root="assets/", url=image) %}
+	{% set page_image_url = macros::image_url(root="assets/images/", url=image, width=1600) %}
+	{% set direct_image_url = macros::image_url(root="assets/images/", url=image) %}
 	<a href="{{ direct_image_url }}" target="_blank">
 		{% if image is starting_with('https://player.vimeo.com/video/') %}
 		<div class="video">
