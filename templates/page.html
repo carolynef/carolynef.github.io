@@ -33,8 +33,9 @@
 	{% set image_url = macros::image_url(root=page.path, url=image) %}
 	<a href="{{ image_url }}" target="_blank">
 		{% if image is starting_with('https://player.vimeo.com/video/') %}
-		<iframe src="{{ image }}" width="1600" height="1200" frameborder="0"
-			allow="autoplay; fullscreen; picture-in-picture"></iframe>
+		<div class="video">
+			<iframe src="{{ image }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+		</div>
 		{% else %}
 		<img src="{{ image_url }}" alt="{{ page.title }}">
 		{% endif %}
