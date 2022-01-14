@@ -13,13 +13,13 @@ tags = ["Identité visuelle", "Hôtel", "Éco-responsable",]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1M9K_u10Q6_Tbp80e0_S_HowRYuRQAgUP",
+    "godin-presentation.jpg",
 
-    "https://drive.google.com/uc?id=1Lu1upfCIKhsCQJYp5IqZlF37LAt8Xvcp",
-    "https://drive.google.com/uc?id=1LtHNDfkc5xLALMNUYeNV3Zubfp0_0SCV",
-    "https://drive.google.com/uc?id=1M4yisFL7G81pmSz036JpGEQrNagIMEnT",
-    "https://drive.google.com/uc?id=1M00TOWpEJMGQRlM1n614FmxrbMrT-_ol",
-    "https://drive.google.com/uc?id=1M54cm1Eqj6vh_jfKw76AA2qIUcGIjCW3",
+    "godin-tesla.jpg",
+    "godin-door-hanger.jpg",
+    "godin-bouteille.jpg",
+    "godin-pods.jpg",
+    "godin-chambre.jpg",
 
 
 

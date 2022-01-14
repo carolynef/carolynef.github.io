@@ -3,7 +3,10 @@
 {{ url }}
 {% else %}
 {% set path = root ~ url %}
-{% if height %}
+{% if height and width %}
+{% set image = resize_image(path=path, width=width, height=height, op="fit") %}
+{{ image.url }}
+{% elif height %}
 {% set image = resize_image(path=path, height=height, op="fit_height") %}
 {{ image.url }}
 {% elif width %}
@@ -62,7 +65,7 @@
 			{% endif %}{% endfor %}>
 
 			<a href="{{ page.permalink }}" title="{{ page.description }}">
-				<img src="{{ macros::image_url(root=assets, url=page.extra.image_urls[0], height=380) }}"
+				<img src="{{ macros::image_url(root=assets, url=page.extra.image_urls[0], height=760) }}"
 					alt="{{ page.description }}">
 				<div class="overlay">
 					<h3>{{ page.title }}</h3>

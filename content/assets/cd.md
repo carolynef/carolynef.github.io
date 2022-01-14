@@ -14,11 +14,11 @@ tags = ["Site web", "Packaging", "Album CD", "éco-responsable"]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1DJ9mVGGXIq1lDNWlg1LLB4Roi3XQSHvE",
-    "https://drive.google.com/uc?id=1CQsiyEK01A896DamIN7WEVd_bhMsUu_I",
+    "cd-vignette-v2.jpg",
+    "cd-mockup.jpg",
     "https://player.vimeo.com/video/664811189",
-    "https://drive.google.com/uc?id=1DOH2FvfYwq19MTaYjd1eXNy1u8_oxxFp",
-    "https://drive.google.com/uc?id=1DSH7eR2mpGzp5Ydc7tD1Apo4gwaxTfNj",
+    "cd-livret.jpg",
+    "cd-merch.jpg",
 
 ]
 width = 1

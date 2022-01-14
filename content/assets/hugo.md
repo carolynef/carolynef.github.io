@@ -14,7 +14,9 @@ tags = ["Création typographique"]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1BBRfRl9dwOArJDxCjnBwBHb0RQ81O6ov","https://drive.google.com/uc?id=1BJJhT8WYu-HjiAmKv5-Pxk729eDjbXBI", "https://drive.google.com/uc?id=1BGrkfObxSa-tvQKRtMAO983vWhU1_cGj",
+    "hugo-mockup1.jpg",
+    "hugo-fairepart.jpg",
+    "hugo-mockup2.jpg",
 ]
 width = 1
 height = 1

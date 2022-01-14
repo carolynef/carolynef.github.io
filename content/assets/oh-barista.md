@@ -9,16 +9,13 @@ categories = ["Packaging", "Identité visuelle"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Ps",]
 year = ["2021"]
-tags = ["Packaging", "café", "éco-responsable"]
+tags = ["Packaging", "Papeterie", "Café", "Éco-responsable"]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1DpBlr4lGedKai4Hqmm6gSV8ufgSyliF8",
-    "https://drive.google.com/uc?id=1Djojz-QMRPQub7mlTefwgdzQYaPaBGhs",
-    "https://drive.google.com/uc?id=1DqkuCI_lF8O4rP-cyzP7mRCfavOv8hm7",
-
-
-
+    "oh-barista-mockup.jpg",
+    "oh-barista-coffeebag.jpg",
+    "oh-barista-cartes.jpg",
 ]
 width = 1
 height = 1
@@ -33,9 +30,10 @@ Chaque café porte le nom d'un artiste-peintre connu pour faire le parallèle en
 
 Les illustrations viennent appuyer le nom du café en se réappropriant le style de l'artiste.
 
-Le papier proposé pour la réalisation des cartes d’affaires est le papier de l’*Atelier Retailles©*.
+Le papier proposé pour la réalisation des cartes d’affaires est le papier de l’[Atelier Retailles©](https://www.atelierretailles.com/latelier).
 La couleur et les bordures sont toutes deux irrégulières, ajoutant un fini brut et apportant du contraste au logo ton sur ton sobre.
 Le papier est fabriqué artisanalement, à Montréal, à partir de retailles de papier.
-*Crédit photo des cartes d'affaires: Atelier Retailles©*
+
+*Crédit photo des cartes d'affaire: [Atelier Retailles©](https://www.atelierretailles.com/latelier)*
 
 

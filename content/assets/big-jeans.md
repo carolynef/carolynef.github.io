@@ -1,5 +1,5 @@
 +++
-title = "Big Jeans"
+title = "Big Jeans - Bold In Green"
 description = "Packaging pour une marque de jeans"
 date = "2021-01-02"
 weight = 3
@@ -13,9 +13,9 @@ tags = ["Packaging", "Étiquettes", "Éco-responsable"]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1Dc7VNaIfUBm1T2_vfIZkeByt9tAc5nBx",
-    "https://drive.google.com/uc?id=1DZ0aLfHXOZK_SztWSlxRmivJPb0iEGi6",
-    "https://drive.google.com/uc?id=1DXVpD9Z1sN6lw8KiFLAyHUIDk-iJ-W9c",
+    "bigjeans-1.jpg",
+    "bigjeans-store.jpg",
+    "bigjeans-2.jpg",
 
 
 

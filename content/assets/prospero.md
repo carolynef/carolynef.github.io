@@ -13,10 +13,10 @@ tags = ["publicité"]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1Bjo3Xs9xKkFeiG5omc_gNrfuuNLghMuu",
-    "https://drive.google.com/uc?id=1CFUT64u618S4bDePuVrAvrmy_RGGo0tr",
-    "https://drive.google.com/uc?id=1C6rx8ZFteiYE8ZPsJ25CSI6du7qROGHp",
-    "https://drive.google.com/uc?id=1CIHucjOI_77VqVuxnzeHVDS7kUJaMtGN",
+    "prospero-abribus2.jpg",
+    "prospero-craie.jpg",
+    "prospero-programmation.jpg",
+    "prospero-affiche-aplat2.jpg",
 ]
 width = 1
 height = 1

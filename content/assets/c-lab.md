@@ -10,13 +10,13 @@ categories = ["Identité visuelle"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Id", "Ae"]
 year = ["2021"]
-tags = ["Identité visuelle", "Animation", ]
+tags = ["Identité visuelle", "Animation", "Papeterie", ]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1Drz0Ad4HIPNIAJ6v87S2V2qdsbDc3zuP",
-    "https://drive.google.com/uc?id=1DtOgYMK1BF1Cgh--Js8mc8zNK3QiPozK",
-    "https://drive.google.com/uc?id=1E1SKR5k3h0QHX4iSe9Kbfl-5dDRCo0UV",
+    "clab-papeterie.jpg",
+    "clab-ods2.jpg",
+    "clab-piece.jpg",
     "https://player.vimeo.com/video/665227914",
 
 

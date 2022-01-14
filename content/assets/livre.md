@@ -13,8 +13,8 @@ tags = ["Livre", "Couverture",]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1BAvNhF_IDkK9I8zuJ1latq4o0ISCiXmn",
-    "https://drive.google.com/uc?id=1B9zJGhC9aUFsNMrsYkzTY4aobxvfiPKI",
+    "livre-mockup1.jpg",
+    "livre-mockup2.png",
 
 ]
 width = 1

@@ -13,7 +13,8 @@ year = ["2020"]
 
 [extra]
 image_urls = [
-     "https://drive.google.com/uc?id=1qRHmq0-a1rNWoLw99JDMhhIde2StcDN4","https://drive.google.com/uc?id=1qPo7pxKj90yHed7cmLk44iwbIlH35v83",
+     "monterey.jpg",
+     "monterey-mockup2.jpg",
 ]
 width = 1
 height = 1

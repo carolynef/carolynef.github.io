@@ -8,22 +8,21 @@ weight = 6
 [taxonomies]
 categories = ["Identité visuelle", "Design web", "Mise en page",]
 project_type = ["Projet scolaire"]
-softwares = ["Ai", "Id", "PS", "Xd", "Ae"]
+softwares = ["Ai", "Id", "Ps", "Xd", "Ae"]
 year = ["2021"]
-tags = ["Identité visuelle", "Animation", "Mise en page", "Site web" ]
+tags = ["Identité visuelle", "Animation", "Mise en page", "Site web", "Papeterie", ]
 
 [extra]
 image_urls = [
-    "https://drive.google.com/uc?id=1LerN6gWTTodMlxXB2_xuZzXJUKbLKtbv",
-    "https://drive.google.com/uc?id=1G5OFusFcHgSnvxoF63nuz4-rNs_w2bFI",
-
-    "https://drive.google.com/uc?id=1Fx_ppaKBngBaxFTRbyhW8r-0UiAHYFJz",
-
+    "mjsm-cartes-affaire.jpg",
+    "mjsm.jpg",
+    "mjsm2.jpg",
+    "mjsm3.jpg",
+    "mjsm4.jpg",
+    "mjsm5.jpg",
+    "mjsm-trousse-participant.gif",
     "https://player.vimeo.com/video/665237598",
     "https://player.vimeo.com/video/665235149",
-
-
-
 ]
 width = 1
 height = 1
