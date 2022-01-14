@@ -4,12 +4,15 @@
 
 {% block page %}
 <div class="page-layout">
-	<article>
-		<img class="portrait" src="/images/portrait.png" />
-		<h1 class="side">{{ page.title }}</h1>
-		<div>
-			{{ page.content | safe }}
-		</div>
-	</article>
+	<div class="side">
+		<article>
+			<img class="portrait" src="/images/portrait.png" />
+			<h1 class="side">{{ page.title }}</h1>
+			<div>
+				{{ page.content | safe }}
+			</div>
+		</article>
+		<img src="/images/about.svg" />
+	</div>
 </div>
 {% endblock page %}

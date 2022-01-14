@@ -493,7 +493,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            align-items: flex-start;
+            align-items: stretch;
             justify-content: space-between;
             gap: 2rem;
 
@@ -514,6 +514,32 @@ body {
                 }
             }
 
+            div.side {
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+
+                > img {
+                    display: block;
+                    width: 160px;
+                    margin-left: 200px;
+                }
+
+                article h1.side {
+                    display: none;
+                }
+
+                @media screen and (max-width: 1200px) {
+                    > img {
+                        display: none;
+                    }
+
+                    article h1.side {
+                        display: block;
+                    }
+                }
+            }
+
             article {
                 flex: 1;
                 font-size: 125%;
@@ -530,6 +556,7 @@ body {
                 }
 
                 iframe#contact {
+                    display: block;
                     width: 100%;
                     min-height: 800px;
                 }
