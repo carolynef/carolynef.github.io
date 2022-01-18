@@ -9,9 +9,9 @@
     <meta name=" author" content="{{ config.extra.author }}">
     <meta name="description" content="{{ config.extra.description }}">
     <meta property="og:title" content="{{ config.extra.title }}" />
-    <meta property="og:image" content="/images/apercu-web.png" />
+    <meta property="og:image" content="{{ get_url(path='images/apercu-web.png', trailing_slash=false) }}" />
     <meta property="twitter:title" content="{{ config.extra.title }}" />
-    <meta property="twitter:image" content="/images/apercu-web.png" />
+    <meta property="twitter:image" content="{{ get_url(path='images/apercu-web.png', trailing_slash=false) }}" />
     <title>{% block title %}{{ config.extra.title }}{% endblock title %}</title>
 
     <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) }}">
