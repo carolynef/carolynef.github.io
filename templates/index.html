@@ -8,7 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name=" author" content="{{ config.extra.author }}">
     <meta name="description" content="{{ config.extra.description }}">
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <meta property="og:title" content="{{ config.extra.title }}" />
+    <meta property="og:image" content="/images/apercu-web.png" />
+    <meta property="twitter:title" content="{{ config.extra.title }}" />
+    <meta property="twitter:image" content="/images/apercu-web.png" />
+    <title>{% block title %}{{ config.extra.title }}{% endblock title %}</title>
 
     <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) }}">
     <link rel="stylesheet" href="{{ get_url(path='css/font-awesome.css', trailing_slash=false) }}">
