@@ -3,7 +3,7 @@
 {% block page %}
 <!-- Should be: `taxonomy.permalink`. See: https://github.com/getzola/zola/issues/1627 -->
 {% set full_taxonomy = get_taxonomy(kind=taxonomy.name) %}
-<h1 class="taxonomy">Liste des oeuvres par <a href="{{ full_taxonomy.permalink }}">{{
+<h1 class="taxonomy">Liste des œuvres par <a href="{{ full_taxonomy.permalink }}">{{
 		config.extra.taxonomies_titles[taxonomy.name].0 | lower }}</a>
 	&mdash; {{
 	macros::resolve_aliases(taxonomy=taxonomy.name, name=term.name) }}</h1>
