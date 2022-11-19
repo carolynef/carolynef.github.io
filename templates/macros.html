@@ -28,33 +28,6 @@
 
 {% macro thumbnails(section, taxonomy_kind) %}
 <div id="thumbnails-container">
-	<nav>
-		<ul>
-			<li>
-				<a id="all" class="route" href="#all">tous</a>
-			</li>
-
-			{% set taxonomy = get_taxonomy(kind=taxonomy_kind) %}
-			{% for item in taxonomy.items %}
-
-			{% set_global has_item = false %}
-			{% for page in section.pages %}
-			{% set taxonomies = page.taxonomies | get(key=taxonomy_kind) %}
-			{% if taxonomies is containing(item.name) %}
-			{% set_global has_item = true %}
-			{% break %}
-			{% endif %}
-			{% endfor %}
-
-			{% if has_item %}
-			<li>
-				<a id="{{ taxonomy_kind }}__{{ item.slug }}" class="route"
-					href="#{{ taxonomy_kind }}__{{ item.slug }}">{{ item.name }}</a>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-	</nav>
 	<div class="thumbnails">
 		<div class="thumbnails-sizer"></div>
 		{% set assets = "assets/images/" %}
