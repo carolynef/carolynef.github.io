@@ -6,15 +6,19 @@
 }
 
 :root {
-    --logo-light: url("/images/logo-light.svg");
-    --logo-dark: url("/images/logo-dark.svg");
-    --main-color-light: black;
-    --secondary-color-light: #999;
-    --background-color-light: white;
+    --logo: url("/images/logo.svg");
 
-    --main-color-dark: white;
-    --secondary-color-dark: #ccc;
-    --background-color-dark: black;
+    --main-color-light: #e85a33;
+    --secondary-color-light: #edff00;
+    --background-color-light: #f8d0ca;
+
+    --main-color-dark: #f8d0ca;
+    --secondary-color-dark: #edff00;
+    --background-color-dark: #e85a33;
+
+    --main-color-white: #111232;
+    --secondary-color-white: #e85a33;
+    --background-color-white: #ffffff;
 
     --minimum-page-margin: 200px;
     --maximum-page-width: 1600px;
@@ -227,7 +231,10 @@ body {
             margin: 0 1rem;
             flex: 1;
             height: 100%;
-            background: var(--logo) no-repeat center center;
+            background-image: var(--logo);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
 
             &:after {
                 content: "carolyne fabre";
