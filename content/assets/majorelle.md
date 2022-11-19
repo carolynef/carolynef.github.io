@@ -2,7 +2,7 @@
 title = "Le Jardin Majorelle"
 description = "Illustration du Jardin Majorelle au Maroc"
 date = "2020-01-02"
-weight = 0
+weight = 1
 
 [taxonomies]
 categories = ["Illustration"]

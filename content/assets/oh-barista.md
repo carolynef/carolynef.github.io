@@ -1,11 +1,11 @@
 +++
-title = "Oh barista"
+title = "OH BARISTA"
 description = "Branding et packaging pour un microtorréfacteur"
 date = "2021-01-02"
-weight = 7
+weight = 9
 
 [taxonomies]
-categories = ["Packaging", "Identité visuelle"]
+categories = ["Identité visuelle", "Packaging", "Animation"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Ps",]
 year = ["2021"]
@@ -13,7 +13,10 @@ tags = ["Packaging", "Papeterie", "Café", "Éco-responsable"]
 
 [extra]
 image_urls = [
+    "oh-barista-intro.gif",
     "oh-barista-mockup.jpg",
+    "oh-barista-bloc-web-02.jpg",
+    "oh-barista-bloc-web-03.jpg",
     "oh-barista-coffeebag.jpg",
     "oh-barista-cartes.jpg",
 ]
@@ -21,19 +24,14 @@ width = 1
 height = 1
 +++
 
-Mandat : Création d'une image de marque et d'un packaging pour les sacs de café de la compagnie de microtorréfaction Oh Barista.
+Création d’une image de marque pour le microtorréfacteur Oh Barista. Le visuel est sobre avec une touche bold corail qui attire l'oeil et percute. Le logo est embossé afin d'apporter du relief tout en sobriété. Chaque type de café porte le nom d'un artiste-peintre en référence à l’art la microtorréfaction.
 
-Proposition :
-Une image de marque sobre avec une touche bold orange qui attire l'œil et percute. Le logo sur les cartes d'affaires, sur les sacs de café et sur le porte gobelet sont embossés afin d'apporter du relief tout en sobriété.
+Le papier proposé pour la réalisation des cartes d’affaires est le papier de l’Atelier Retailles©. La couleur et les bordures sont toutes deux irrégulières, ajoutant un fini brut et apportant du contraste au logo ton sur ton sobre. Le papier est fabriqué artisanalement, à Montréal, à partir de retailles de papier.
 
-Chaque café porte le nom d'un artiste-peintre connu pour faire le parallèle entre l'art et la microtorréfaction. Les sacs de café sont compostables.
+Crédit photo des cartes d'affaire: Atelier Retailles©
 
-Les illustrations viennent appuyer le nom du café en se réappropriant le style de l'artiste.
+Created a visual identity for the coffee roaster Oh Barista. Design is sober, yet the orange gives a bold touch. Logo is highlighted with embossing. Each coffee has the name of a painter, as a reference to the art of micro-roasting.
 
-Le papier proposé pour la réalisation des cartes d’affaires est le papier de l’[Atelier Retailles©](https://www.atelierretailles.com/latelier).
-La couleur et les bordures sont toutes deux irrégulières, ajoutant un fini brut et apportant du contraste au logo ton sur ton sobre.
-Le papier est fabriqué artisanalement, à Montréal, à partir de retailles de papier.
-
-*Crédit photo des cartes d'affaire: [Atelier Retailles©](https://www.atelierretailles.com/latelier)*
+The paper used for business cards is from the Atelier Retailles©. Colour and edges are uneven, which gives a raw finish to the cards and contrasts with the embossed logo. Paper is handmade in Montreal, from paper scraps.
 
 

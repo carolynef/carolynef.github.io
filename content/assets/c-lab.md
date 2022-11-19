@@ -1,12 +1,12 @@
 +++
-title = "C-LAB labo créatif"
+title = "C-LAB - LABO CRÉATIF"
 description = "Identité visuelle pour une agence de communication"
 date = "2021-01-02"
-weight = 2
+weight = 8
 
 
 [taxonomies]
-categories = ["Identité visuelle"]
+categories = ["Identité visuelle", "Papeterie", "Animation", "Mise en page"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Id", "Ae"]
 year = ["2021"]
@@ -14,25 +14,17 @@ tags = ["Identité visuelle", "Animation", "Papeterie", ]
 
 [extra]
 image_urls = [
+    "clab-intro.gif",
     "clab-papeterie.jpg",
+    "clab-moodboard-logo.png",
     "clab-ods2.jpg",
     "clab-piece.jpg",
-    "https://player.vimeo.com/video/665227914",
-
-
-
 ]
 width = 1
 height = 1
 +++
 
-Mandat : Création de l'identité visuelle de l'agence créée pour le projet de fins d'études *C-LAB labo créatif*.
+Création de l'identité visuelle du studio C-LAB labo créatif. Un design à la fois sobre et percutant a été créé. L'emphase est mise sur la fibre créative avec l'intégration du motif de cordages dans le design. Le second motif complète l’image et est utilisé pour les objets promotionnels.
 
-Proposition : Un design sobre et percutant par le jeu de couleurs noir et blanc avec des accents rouges.
-
-L'emphase est mise sur la fibre créative avec l'intégration de cordes dans le design.
-
-Les cordes représentent aussi toutes les spécialités de l'agence 360.
-
-*Mention spéciale : Projet réalisé en équipe avec Danja Codina et Olivier Perron.*
+Created a visual identity for C-LAB creative lab. The design is sober, yet bold. The focus is on the creative mind, which is represented with strings (“la fibre créative”). The second pattern completes the identity and is used for promotional objects.
 

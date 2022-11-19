@@ -2,7 +2,7 @@
 title = "Big Jeans - Bold In Green"
 description = "Packaging pour une marque de jeans"
 date = "2021-01-02"
-weight = 3
+weight = 0
 
 [taxonomies]
 categories = ["Packaging", "Identité visuelle"]

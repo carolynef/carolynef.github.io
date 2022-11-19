@@ -1,5 +1,5 @@
 +++
-title = "Mouvement Jeunes et santé mentale"
+title = "MOUVEMENT JEUNES ET SANTÉ MENTALE"
 description = "Identité visuelle pour le MJSM"
 date = "2021-01-02"
 weight = 6

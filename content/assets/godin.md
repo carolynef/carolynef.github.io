@@ -2,7 +2,7 @@
 title = "Hôtel Godin"
 description = "Refon d'identité visuelle"
 date = "2021-01-02"
-weight = 5
+weight = 0
 
 [taxonomies]
 categories = ["Identité visuelle"]
