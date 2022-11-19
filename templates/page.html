@@ -1,32 +1,21 @@
 {% extends "index.html" %}
 
+{% block body_class %}white{% endblock body_class %}
+
 {% block page %}
 <div class="page-layout">
 	<article>
 		<h1>{{ page.title }}</h1>
+		<h2 class="categories">
+			{% set taxonomy = 'categories' %}
+			{% set items = page.taxonomies | get(key=taxonomy, default=[]) %}
+
+			{% for item in items %}
+			<span>{{ item | replace(from=" ", to=" ") }}</span>
+			{% endfor %}
+		</h2>
 		{{ page.content | safe }}
 	</article>
-	<div class="info">
-		{% for taxonomy in config.extra.featured_taxonomies %}
-		{% set items = page.taxonomies | get(key=taxonomy, default=[]) %}
-		{% if items %}
-		{% if items | length == 1 %}
-		{% set plural = 0 %}
-		{% else %}
-		{% set plural = 1 %}
-		{% endif %}
-
-		<h2>{{ config.extra.taxonomies_titles[taxonomy][plural] }}</h2>
-		<ul>
-			{% for item in items %}
-			<li><a href="{{ get_taxonomy_url(kind=taxonomy, name=item) }}" title="{{ macros::resolve_aliases(taxonomy=taxonomy,
-					name=item) }}">{{ item }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-		{% endif %}
-		{% endfor %}
-	</div>
 </div>
 <div class="images-list">
 	{% for image in page.extra.image_urls %}
@@ -37,6 +26,8 @@
 		<div class="video">
 			<iframe src="{{ image }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
 		</div>
+		{% elif image is ending_with('.gif') %}
+		<img src="{{ direct_image_url }}" alt="{{ page.title }}">
 		{% else %}
 		<img src="{{ page_image_url }}" alt="{{ page.title }}">
 		{% endif %}

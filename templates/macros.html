@@ -65,8 +65,13 @@
 			{% endif %}{% endfor %}>
 
 			<a href="{{ page.permalink }}" title="{{ page.description }}">
-				<img src="{{ macros::image_url(root=assets, url=page.extra.image_urls[0], height=760) }}"
+				{% set direct_image_url = page.extra.image_urls[0] %}
+				{% if direct_image_url is ending_with('.gif') %}
+				<img src="{{ macros::image_url(root=assets, url=direct_image_url) }}" alt="{{ page.description }}">
+				{% else %}
+				<img src="{{ macros::image_url(root=assets, url=direct_image_url, height=760) }}"
 					alt="{{ page.description }}">
+				{% endif %}
 				<div class="overlay">
 					<h3>{{ page.title }}</h3>
 					<p>{{ page.taxonomies | get(key=taxonomy_kind) | sort | join(sep=' – ') | safe
