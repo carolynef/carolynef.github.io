@@ -100,7 +100,7 @@ body {
         color: inherit;
 
         &:hover {
-            color: white;
+            color: #edff00;
         }
     }
 
@@ -451,6 +451,10 @@ body {
                     object-fit: contain;
                 }
 
+                h1,
+                h2 {
+                    color: #e85a33;
+                }
                 h1 {
                     margin-top: 0;
                     font-size: 300%;
