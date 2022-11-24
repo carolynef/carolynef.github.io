@@ -5,7 +5,7 @@ date = "2020-01-05"
 weight = 4
 
 [taxonomies]
-categories = ["Illustration", "Animation"]
+categories = ["Illustration", "Motion Design"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Ae"]
 year = ["2021"]

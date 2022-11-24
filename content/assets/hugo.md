@@ -26,4 +26,4 @@ Création d'une nouvelle police de caractères à partir d'une police existante.
 
 La police a été crée dans le but de réaliser un faire-part de naissance pour le petit Hugo. La typographie originale utilisée est Akzidenz Grotesk condensé. La nouvelle police est élégante et apporte une note enfantine par son aspect manuscrit.
 
-Creation of a new font, based on an existant. The font was created for Hugo birth announcement. The existant font used was Akzidenz Grotesk condensed. The new font is elegant with a childlike note.
+*Creation of a new font, based on an existant. The font was created for Hugo birth announcement. The existant font used was Akzidenz Grotesk condensed. The new font is elegant with a childlike note.*

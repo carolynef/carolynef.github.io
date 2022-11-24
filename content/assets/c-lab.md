@@ -6,7 +6,7 @@ weight = 8
 
 
 [taxonomies]
-categories = ["Identité visuelle", "Papeterie", "Animation", "Mise en page"]
+categories = ["Identité visuelle", "Papeterie", "Motion Design", "Mise en page"]
 project_type = ["Projet scolaire"]
 softwares = ["Ai", "Id", "Ae"]
 year = ["2021"]
@@ -26,5 +26,5 @@ height = 1
 
 Création de l'identité visuelle du studio C-LAB labo créatif. Un design à la fois sobre et percutant a été créé. L'emphase est mise sur la fibre créative avec l'intégration du motif de cordages dans le design. Le second motif complète l’image et est utilisé pour les objets promotionnels.
 
-Created a visual identity for C-LAB creative lab. The design is sober, yet bold. The focus is on the creative mind, which is represented with strings (“la fibre créative”). The second pattern completes the identity and is used for promotional objects.
+*Created a visual identity for C-LAB creative lab. The design is sober, yet bold. The focus is on the creative mind, which is represented with strings (“la fibre créative”). The second pattern completes the identity and is used for promotional objects.*
 

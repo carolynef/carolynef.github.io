@@ -12,19 +12,14 @@ year = ["2021"]
 tags = ["Identité visuelle", "Hôtel", "Éco-responsable",]
 
 [extra]
+hidden = true
 image_urls = [
     "godin-presentation.jpg",
-
     "godin-tesla.jpg",
     "godin-door-hanger.jpg",
     "godin-bouteille.jpg",
     "godin-pods.jpg",
     "godin-chambre.jpg",
-
-
-
-
-
 ]
 width = 1
 height = 1

@@ -32,8 +32,4 @@ Le CD est offert dans une pochette de protection réalisée en papier plantable 
 Le sous-titre wildflower edition fait référence au type de semences inclues dans le papier plantable.
 Les collages photos ont été réalisés pour le projet.
 
-Created a CD album packaging and a website using HTML5 and CSS.
-The website was created to promote the CD and the special editions. An online shop, an information page and a contact form page were created for the website.
-The CD packaging is made of plantable paper (brown sleeve).
-The subtitle Wildflower edition is a reference to the seeds in the plantable sleeve.
-The collages were entirely created for this project.
+*Created a CD album packaging and a website using HTML5 and CSS. The website was created to promote the CD and the special editions. An online shop, an information page and a contact form page were created for the website. The CD packaging is made of plantable paper (brown sleeve). The subtitle Wildflower edition is a reference to the seeds in the plantable sleeve. The collages were entirely created for this project.*

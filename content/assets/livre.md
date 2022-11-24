@@ -21,5 +21,6 @@ width = 1
 height = 1
 +++
 
-Mandat : Création d'une couverture pour le livre l'Élégance du hérisson de Muriel Barbery.
-Proposition : L'emphase est mise sur le hérisson, qui est représenté de façon abstraite et gribouillée pour contraster avec le terme élégance du titre. L'illustration et le titre sont en vernis sélectif en relief pour donner du relief à la couverture. Le papier a un fini velouté et doux au toucher.
+Création d'une couverture pour le livre l'Élégance du hérisson de Muriel Barbery. L'emphase est mise sur le hérisson, qui est représenté de façon abstraite et gribouillée pour contraster avec le terme *élégance* du titre. L'illustration et le titre sont en vernis sélectif en relief pour donner du relief à la couverture. Le papier a un fini velouté et doux au toucher.
+
+*Created a book cover for L'élégance du hérisson, from Muriel Barbery. The focus is put on the hedgehog, represented in a abstract and scribbled way to contrast with the term "elegance" in the title. Illustration and title are made with a selective varnish to highlight the cover. Paper has a soft and velvety touch.*
