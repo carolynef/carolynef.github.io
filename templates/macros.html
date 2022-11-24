@@ -32,11 +32,11 @@
 		<div class="thumbnails-sizer"></div>
 		{% set assets = "assets/images/" %}
 		{% for page in section.pages | reverse %}
+		{% if page.extra.hidden %}{% continue %}{% endif %}
 		<div class="thumbnail thumbnail-w{{ page.extra.width | default(value=1) }} thumbnail-h{{ page.extra.height | default(value=1) }}"
 			{% for taxonomy_kind, taxonomies in page.taxonomies %} {% if taxonomies %} data-{{ taxonomy_kind
 			}}="{% for taxonomy in taxonomies %}{{ taxonomy | slugify }}{% if not loop.last %},{% endif %}{% endfor %}"
 			{% endif %}{% endfor %}>
-
 			<a href="{{ page.permalink }}" title="{{ page.description }}">
 				{% set direct_image_url = page.extra.image_urls[0] %}
 				{% if direct_image_url is ending_with('.gif') %}

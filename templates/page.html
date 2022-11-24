@@ -27,7 +27,8 @@
 			<iframe src="{{ image }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
 		</div>
 		{% elif image is ending_with('.gif') %}
-		<img src="{{ direct_image_url }}" alt="{{ page.title }}">
+		<img src="{{ direct_image_url }}" {% if image is ending_with('.small.gif') %}class="small" {% endif %}
+			alt="{{ page.title }}">
 		{% else %}
 		<img src="{{ page_image_url }}" alt="{{ page.title }}">
 		{% endif %}

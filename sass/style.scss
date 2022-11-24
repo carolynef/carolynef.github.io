@@ -24,6 +24,9 @@
     --header-size: 1;
     --menu-open-opacity: 5%;
 
+    --page-max-width: 1200px;
+    --page-margin: calc((100vw - var(--page-max-width)) / 2);
+
     --thumbnail-font-size: 1;
     --thumbnail-width-unit: 500px;
     --thumbnail-height-unit: 380px;
@@ -32,8 +35,10 @@
     --thumbnail-overlay-background-color: rgba(238, 255, 0, 0.904);
 
     @media screen and (min-width: 641px) and (max-width: 1200px) {
-        --minimum-page-margin: 0;
         --header-size: 0.75;
+
+        --page-margin: 0;
+
         --thumbnail-font-size: 0.9;
         --thumbnail-width-unit: 280px;
         --thumbnail-height-unit: 212px;
@@ -41,15 +46,15 @@
     }
 
     @media screen and (max-width: 640px) {
-        --minimum-page-margin: 0;
         --header-size: 0.5;
+
+        --page-margin: 0;
+
         --thumbnail-font-size: 0.75;
-        --thumbnail-width-unit: 160px;
-        --thumbnail-height-unit: 120px;
+        --thumbnail-width-unit: 320px;
+        --thumbnail-height-unit: 240px;
         --thumbnail-gutter: 4px;
     }
-
-    --page-margin: 100px;
 }
 
 html {
@@ -117,6 +122,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: left;
         padding: 0;
         transition-property: top, color, background-color;
         transition-duration: 0.25s;
@@ -205,7 +211,6 @@ body {
             @media screen and (max-width: 1200px) {
                 display: flex;
                 font-size: calc(600% * var(--header-size));
-                min-width: var(--minimum-page-margin);
                 height: calc(var(--header-height) * var(--header-size));
                 align-items: center;
                 transition-property: top;
@@ -451,11 +456,8 @@ body {
                     object-fit: contain;
                 }
 
-                h1,
-                h2 {
-                    color: #e85a33;
-                }
                 h1 {
+                    color: #e85a33;
                     margin-top: 0;
                     font-size: 300%;
                 }
@@ -492,6 +494,7 @@ body {
             a {
                 display: block;
                 line-height: 0;
+                text-align: center;
 
                 &:focus {
                     outline: black solid 2px;
@@ -514,6 +517,11 @@ body {
 
                 img {
                     max-width: 100%;
+                }
+
+                img.small {
+                    margin-top: 1em;
+                    margin-bottom: 1em;
                 }
             }
         }
