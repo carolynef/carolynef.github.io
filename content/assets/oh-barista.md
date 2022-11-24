@@ -13,7 +13,7 @@ tags = ["Packaging", "Papeterie", "Café", "Éco-responsable"]
 
 [extra]
 image_urls = [
-    "oh-barista-intro.gif",
+    "oh-barista-intro.small.gif",
     "oh-barista-mockup.jpg",
     "oh-barista-bloc-web-02.jpg",
     "oh-barista-bloc-web-03.jpg",

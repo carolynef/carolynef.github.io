@@ -12,6 +12,7 @@ year = ["2021"]
 tags = ["Livre", "Couverture",]
 
 [extra]
+hidden = true
 image_urls = [
     "livre-mockup1.jpg",
     "livre-mockup2.png",

@@ -12,6 +12,7 @@ year = ["2021"]
 tags = ["publicité"]
 
 [extra]
+hidden = true
 image_urls = [
     "prospero-abribus2.jpg",
     "prospero-craie.jpg",

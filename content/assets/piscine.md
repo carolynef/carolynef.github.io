@@ -12,7 +12,7 @@ year = ["2021"]
 
 [extra]
 image_urls = [
-    "follow-the-sun-intro.gif",
+    "follow-the-sun-intro.small.gif",
     "piscine.jpg",
     "piscine-mockup.jpg",
     "https://player.vimeo.com/video/664017713",

@@ -14,7 +14,7 @@ tags = ["Identité visuelle", "Animation", "Papeterie", ]
 
 [extra]
 image_urls = [
-    "clab-intro.gif",
+    "clab-intro.small.gif",
     "clab-papeterie.jpg",
     "clab-moodboard-logo.png",
     "clab-ods2.jpg",

@@ -14,13 +14,14 @@ tags = ["Animation"]
 
 [extra]
 image_urls = [
-    "FA-intro-web-v2.gif",
+    "FA-intro-web-v2.small.gif",
+    "https://player.vimeo.com/video/774796020",
 ]
 width = 1
 height = 1
 +++
 
 Création d’un demo reel mettant en avant les services proposés par l’entreprise.
-Réalisation d’un design ludique et frais, qui reprend l’image de marque de Food Algorithm (logo, couleurs, typographie) et qui met en avant les services que propose la comapgnie par le contenu vidéo réalisé à l'interne.
+Réalisation d’un design ludique et frais, qui reprend l’image de marque de Food Algorithm (logo, couleurs, typographie) et qui met en avant les services de la compagnie en incorporant le contenu vidéo réalisé à l'interne.
 
 *Created a demo reel to promote the compagny services. Realized a fresh and playful design using Food Algorithm visual identity (logo, colours, fonts), and incorporated the intern video contents to promote the services.*

@@ -12,6 +12,7 @@ year = ["2021"]
 tags = ["Packaging", "Étiquettes", "Éco-responsable"]
 
 [extra]
+hidden = true
 image_urls = [
     "bigjeans-1.jpg",
     "bigjeans-store.jpg",
