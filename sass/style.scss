@@ -8,17 +8,13 @@
 :root {
     --logo: url("/images/logo.svg");
 
-    --main-color-light: #e85a33;
-    --secondary-color-light: #edff00;
-    --background-color-light: #f8d0ca;
+    --palette-home-text: #e85a33;
+    --palette-home-highlight: #edff00;
+    --palette-home-background: #f8d0ca;
 
-    --main-color-dark: #f8d0ca;
-    --secondary-color-dark: #edff00;
-    --background-color-dark: #e85a33;
-
-    --main-color-white: #111232;
-    --secondary-color-white: #e85a33;
-    --background-color-white: #ffffff;
+    --palette-project-text: #111232;
+    --palette-project-highlight: #e85a33;
+    --palette-project-background: #ffffff;
 
     --header-height: 200px;
     --header-size: 1;
@@ -62,20 +58,14 @@ html {
 }
 
 body {
-    --main-color: var(--main-color-light);
-    --secondary-color: var(--secondary-color-light);
-    --background-color: var(--background-color-light);
-    --main-color-reverse: var(--main-color-dark);
-    --secondary-color-reverse: var(--secondary-color-dark);
-    --background-color-reverse: var(--background-color-dark);
+    --palette-text: var(--palette-home-text);
+    --palette-highlight: var(--palette-home-highlight);
+    --palette-background: var(--palette-home-background);
 
-    &.white {
-        --main-color: var(--main-color-white);
-        --secondary-color: var(--secondary-color-white);
-        --background-color: var(--background-color-white);
-        --main-color-reverse: var(--main-color-light);
-        --secondary-color-reverse: var(--secondary-color-light);
-        --background-color-reverse: var(--background-color-light);
+    &.project {
+        --palette-text: var(--palette-project-text);
+        --palette-highlight: var(--palette-project-highlight);
+        --palette-background: var(--palette-project-background);
     }
 
     /*font-family: var(--main-font);*/
@@ -83,8 +73,8 @@ body {
     font-weight: 400;
     font-style: normal;
 
-    color: var(--main-color);
-    background-color: var(--background-color);
+    color: var(--palette-text);
+    background-color: var(--palette-background);
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
@@ -217,11 +207,6 @@ body {
                 transition-duration: 0.25s;
                 transition-timing-function: ease;
                 text-align: center;
-
-                &:hover {
-                    color: var(--secondary-color-reverse);
-                    text-decoration: none;
-                }
 
                 &::after {
                     width: 100%;
@@ -410,13 +395,13 @@ body {
 
             a {
                 font-style: italic;
+                text-decoration: underline;
                 transition-property: color, background-color;
                 transition-timing-function: ease;
                 transition-duration: 0.25s;
 
                 &:focus {
-                    color: var(--main-color-dark);
-                    background-color: var(--background-color-dark);
+                    color: var(--palette-highlight);
                 }
             }
 
@@ -548,7 +533,7 @@ body {
     /* Footer */
 
     footer {
-        color: var(--secondary-color);
+        color: var(--palette-highlight);
         display: flex;
         flex-direction: row;
         align-items: center;
